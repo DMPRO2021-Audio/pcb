@@ -139,7 +139,7 @@ Wire Wire Line
 	3500 2600 3500 2350
 Connection ~ 3500 2600
 Text Notes 600  700  0    50   ~ 10
-MIDI Input Circuit
+MIDI Input
 Text Notes 600  1500 0    50   Italic 0
 Takes the MIDI input from the DIN41524 port and outputs to the UART_RX on the EFM32GG.\n\nThe DIN41524 connector has five pins, but for MIDI communication we only use three\nof them. Pins 1 and 3 are not connected, while pin 2 (the middle pin) is grounded.\nThe two remaining pins (4 and 5), form a current loop from sender to receiver and\nback to the sender. This way we can send "0"s and "1"s by looking for the precence\nor absence of electrical current.\n\nhttp://sandsoftwaresound.net/5-pin-midi-interface-arduino/
 Wire Wire Line
@@ -150,29 +150,29 @@ MIDI_RX
 $Comp
 L Connector:AudioJack3 J2
 U 1 1 61366BDF
-P 2850 3900
-F 0 "J2" H 2570 3833 50  0000 R CNN
-F 1 "AudioJack3" H 2570 3924 50  0000 R CNN
-F 2 "" H 2850 3900 50  0001 C CNN
-F 3 "~" H 2850 3900 50  0001 C CNN
-	1    2850 3900
+P 3000 4700
+F 0 "J2" H 2720 4633 50  0000 R CNN
+F 1 "AudioJack3" H 2720 4724 50  0000 R CNN
+F 2 "" H 3000 4700 50  0001 C CNN
+F 3 "~" H 3000 4700 50  0001 C CNN
+	1    3000 4700
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 61367C82
-P 2550 4150
-F 0 "#PWR0101" H 2550 3900 50  0001 C CNN
-F 1 "GND" H 2555 3977 50  0000 C CNN
-F 2 "" H 2550 4150 50  0001 C CNN
-F 3 "" H 2550 4150 50  0001 C CNN
-	1    2550 4150
+P 2700 4950
+F 0 "#PWR0101" H 2700 4700 50  0001 C CNN
+F 1 "GND" H 2705 4777 50  0000 C CNN
+F 2 "" H 2700 4950 50  0001 C CNN
+F 3 "" H 2700 4950 50  0001 C CNN
+	1    2700 4950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 4150 2550 4000
+	2700 4950 2700 4800
 Wire Wire Line
-	2550 4000 2650 4000
+	2700 4800 2800 4800
 $Comp
 L energymicro-efm32:EFM32GG990F1024 U2
 U 1 1 6137537F
@@ -188,20 +188,20 @@ Text GLabel 11850 6800 0    50   Output ~ 0
 DAC0
 Text GLabel 11850 6900 0    50   Output ~ 0
 DAC1
-Text GLabel 2650 3800 0    50   Input ~ 0
+Text GLabel 2800 4600 0    50   Input ~ 0
 DAC0
-Text GLabel 2650 3900 0    50   Input ~ 0
+Text GLabel 2800 4700 0    50   Input ~ 0
 DAC1
 Wire Notes Line
 	550  3450 4250 3450
 Wire Notes Line
-	4250 6550 550  6550
+	4250 5250 550  5250
 Text Notes 600  3600 0    50   ~ 10
-Analog output circuit
+Analog Output
 Wire Notes Line
-	4250 3450 4250 6550
+	4250 3450 4250 5250
 Wire Notes Line
-	550  6550 550  3450
+	550  5250 550  3450
 NoConn ~ 3250 2700
 Wire Notes Line
 	4250 550  550  550 
@@ -210,10 +210,10 @@ Wire Notes Line
 Text GLabel 11850 4400 0    50   Input ~ 0
 MIDI_RX
 $Comp
-L energymicro-efm32:EFM32GG990F1024 U?
+L energymicro-efm32:EFM32GG990F1024 U3
 U 3 1 61390272
 P 11850 800
-F 0 "U?" H 12150 1050 60  0000 L CNN
+F 0 "U3" H 12150 1050 60  0000 L CNN
 F 1 "EFM32GG990F1024" H 15950 -2100 60  0000 L CNN
 F 2 "" H 11850 800 50  0001 C CNN
 F 3 "http://www.energymicro.com/downloads/datasheets" H 11850 800 50  0001 C CNN
@@ -225,41 +225,41 @@ DBG_SWCLK
 Text GLabel 11850 2600 0    50   BiDi ~ 0
 DBG_SWDIO
 Wire Notes Line
-	4300 2900 7500 2900
+	550  7650 4250 7650
 Wire Notes Line
-	7500 2900 7500 550 
+	4250 7650 4250 5300
 Wire Notes Line
-	7500 550  4300 550 
+	4250 5300 550  5300
 Wire Notes Line
-	4300 550  4300 2900
-Text Notes 4350 650  0    50   ~ 10
-EFM32 Debug Interface Circuit
+	550  5300 550  7650
+Text Notes 600  5400 0    50   ~ 10
+EFM32 Debug Interface
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J?
+L Connector_Generic:Conn_02x10_Odd_Even J3
 U 1 1 613A6A76
-P 6700 2050
-F 0 "J?" H 6750 2667 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 6750 2576 50  0000 C CNN
-F 2 "" H 6700 2050 50  0001 C CNN
-F 3 "~" H 6700 2050 50  0001 C CNN
-	1    6700 2050
+P 2950 6800
+F 0 "J3" H 3000 7417 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 3000 7326 50  0000 C CNN
+F 2 "" H 2950 6800 50  0001 C CNN
+F 3 "~" H 2950 6800 50  0001 C CNN
+	1    2950 6800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7000 1650
-Text GLabel 6500 1950 0    50   BiDi ~ 10
+NoConn ~ 3250 6400
+Text GLabel 2750 6700 0    50   BiDi ~ 10
 DBG_SWDIO
-Text GLabel 6500 2050 0    50   BiDi ~ 10
+Text GLabel 2750 6800 0    50   BiDi ~ 10
 DBG_SWCLK
-Text GLabel 6500 2250 0    50   Output ~ 10
+Text GLabel 2750 7000 0    50   Output ~ 10
 DBG_SWO
-NoConn ~ 6500 1750
-NoConn ~ 6500 1850
-NoConn ~ 6500 2150
+NoConn ~ 2750 6500
+NoConn ~ 2750 6600
+NoConn ~ 2750 6900
 $Comp
-L energymicro-efm32:EFM32GG990F1024 U?
+L energymicro-efm32:EFM32GG990F1024 U3
 U 2 1 613B0438
 P 17300 850
-F 0 "U?" H 24568 -497 60  0000 L CNN
+F 0 "U3" H 24568 -497 60  0000 L CNN
 F 1 "EFM32GG990F1024" H 24568 -603 60  0000 L CNN
 F 2 "" H 17300 850 50  0001 C CNN
 F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 850 50  0001 C CNN
@@ -267,10 +267,10 @@ F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L energymicro-efm32:EFM32GG990F1024 U?
+L energymicro-efm32:EFM32GG990F1024 U3
 U 4 1 613B35C7
 P 17300 4200
-F 0 "U?" H 18100 4537 60  0000 C CNN
+F 0 "U3" H 18100 4537 60  0000 C CNN
 F 1 "EFM32GG990F1024" H 18100 4431 60  0000 C CNN
 F 2 "" H 17300 4200 50  0001 C CNN
 F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 4200 50  0001 C CNN
@@ -279,67 +279,67 @@ F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 4200 50  0001 C CN
 $EndComp
 Text GLabel 17300 4200 0    50   Input ~ 10
 RESETn
-Text GLabel 6500 2350 0    50   Output ~ 10
+Text GLabel 2750 7100 0    50   Output ~ 10
 RESETn
 $Comp
-L power:GND #PWR?
+L power:GND #PWR04
 U 1 1 613B8CA5
-P 7150 2600
-F 0 "#PWR?" H 7150 2350 50  0001 C CNN
-F 1 "GND" H 7155 2427 50  0000 C CNN
-F 2 "" H 7150 2600 50  0001 C CNN
-F 3 "" H 7150 2600 50  0001 C CNN
-	1    7150 2600
+P 3400 7350
+F 0 "#PWR04" H 3400 7100 50  0001 C CNN
+F 1 "GND" H 3405 7177 50  0000 C CNN
+F 2 "" H 3400 7350 50  0001 C CNN
+F 3 "" H 3400 7350 50  0001 C CNN
+	1    3400 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 2550 7150 2550
+	3250 7300 3400 7300
 Wire Wire Line
-	7000 2450 7150 2450
+	3250 7200 3400 7200
 Wire Wire Line
-	7150 2450 7150 2550
-Connection ~ 7150 2550
+	3400 7200 3400 7300
+Connection ~ 3400 7300
 Wire Wire Line
-	7150 2550 7150 2600
+	3400 7300 3400 7350
 Wire Wire Line
-	7000 2350 7150 2350
-Connection ~ 7150 2450
+	3250 7100 3400 7100
+Connection ~ 3400 7200
 Wire Wire Line
-	7000 2250 7150 2250
-Connection ~ 7150 2350
+	3250 7000 3400 7000
+Connection ~ 3400 7100
 Wire Wire Line
-	7150 2350 7150 2450
+	3400 7100 3400 7200
 Wire Wire Line
-	7000 2150 7150 2150
+	3250 6900 3400 6900
 Wire Wire Line
-	7150 2150 7150 2250
-Connection ~ 7150 2250
+	3400 6900 3400 7000
+Connection ~ 3400 7000
 Wire Wire Line
-	7150 2250 7150 2350
+	3400 7000 3400 7100
 Wire Wire Line
-	7000 2050 7150 2050
-Connection ~ 7150 2150
+	3250 6800 3400 6800
+Connection ~ 3400 6900
 Wire Wire Line
-	7000 1950 7150 1950
+	3250 6700 3400 6700
 Wire Wire Line
-	7150 1950 7150 2050
-Connection ~ 7150 2050
+	3400 6700 3400 6800
+Connection ~ 3400 6800
 Wire Wire Line
-	7150 2050 7150 2150
+	3400 6800 3400 6900
 Wire Wire Line
-	7000 1850 7150 1850
-Connection ~ 7150 1950
+	3250 6600 3400 6600
+Connection ~ 3400 6700
 Wire Wire Line
-	7000 1750 7150 1750
+	3250 6500 3400 6500
 Wire Wire Line
-	7150 1750 7150 1850
-Connection ~ 7150 1850
+	3400 6500 3400 6600
+Connection ~ 3400 6600
 Wire Wire Line
-	7150 1850 7150 1950
-NoConn ~ 6500 2450
-NoConn ~ 6500 2550
-Text GLabel 6500 1650 0    50   Output ~ 10
+	3400 6600 3400 6700
+NoConn ~ 2750 7200
+NoConn ~ 2750 7300
+Text GLabel 2750 6400 0    50   Output ~ 10
 VMCU
-Text Notes 4350 1250 0    50   Italic 0
+Text Notes 600  6000 0    50   Italic 0
 The debug interface uses the SW-DP protocol. This is a packet based protocol\nthat uses a unidirectional clock signal (DBG_SWCLK) and a bi-directional data\nsignal (DBG_SWDIO). The debugger (usually) drives the clock signal, while\nthe data-line can be driven be either two. The DBG_SWO line is optionally\nincluded for debug output.\n\nhttps://www.silabs.com/documents/public/application-notes/AN0043.pdf
 $EndSCHEMATC
