@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 4
 Title "Synthesizer"
 Date "2021-09-06"
 Rev "v01"
@@ -13,140 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 "TDT4295 Computer Design Project"
 $EndDescr
-$Comp
-L MIDI:DIN41524-MIDI-IN J1
-U 1 1 613702D9
-P 1000 2150
-F 0 "J1" H 1000 1875 50  0000 C CNN
-F 1 "DIN41524-MIDI-IN" H 1000 1784 50  0000 C CNN
-F 2 "" H 1000 2150 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 1000 2150 50  0001 C CNN
-	1    1000 2150
-	-1   0    0    1   
-$EndComp
-NoConn ~ 700  2050
-NoConn ~ 1300 2050
-Wire Notes Line
-	550  550  550  3400
-Wire Notes Line
-	550  3400 4250 3400
-$Comp
-L power:GND #PWR01
-U 1 1 61363963
-P 1000 2450
-F 0 "#PWR01" H 1000 2200 50  0001 C CNN
-F 1 "GND" H 1005 2277 50  0000 C CNN
-F 2 "" H 1000 2450 50  0001 C CNN
-F 3 "" H 1000 2450 50  0001 C CNN
-	1    1000 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:1N4148 D1
-U 1 1 61364133
-P 2250 2750
-F 0 "D1" V 2204 2830 50  0000 L CNN
-F 1 "1N4148" V 2295 2830 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 2250 2575 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2250 2750 50  0001 C CNN
-	1    2250 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 6136EC29
-P 1800 2600
-F 0 "R1" V 1593 2600 50  0000 C CNN
-F 1 "220" V 1684 2600 50  0000 C CNN
-F 2 "" V 1730 2600 50  0001 C CNN
-F 3 "~" H 1800 2600 50  0001 C CNN
-	1    1800 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	700  2250 700  2900
-Wire Wire Line
-	700  2900 2250 2900
-Wire Wire Line
-	1300 2250 1300 2600
-Wire Wire Line
-	1300 2600 1650 2600
-Wire Wire Line
-	1950 2600 2250 2600
-$Comp
-L Isolator:6N138 U1
-U 1 1 613701F7
-P 2950 2800
-F 0 "U1" H 2950 3267 50  0000 C CNN
-F 1 "6N138" H 2950 3176 50  0000 C CNN
-F 2 "" H 3240 2500 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 3240 2500 50  0001 C CNN
-	1    2950 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 2900 2650 2900
-Connection ~ 2250 2900
-Wire Wire Line
-	2250 2600 2550 2600
-Wire Wire Line
-	2550 2600 2550 2700
-Wire Wire Line
-	2550 2700 2650 2700
-Connection ~ 2250 2600
-$Comp
-L power:GND #PWR02
-U 1 1 61378C8D
-P 3350 3150
-F 0 "#PWR02" H 3350 2900 50  0001 C CNN
-F 1 "GND" H 3355 2977 50  0000 C CNN
-F 2 "" H 3350 3150 50  0001 C CNN
-F 3 "" H 3350 3150 50  0001 C CNN
-	1    3350 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 3000 3350 3000
-Wire Wire Line
-	3350 3000 3350 3150
-Wire Wire Line
-	3250 2900 3500 2900
-$Comp
-L Device:R R2
-U 1 1 61379AB2
-P 3500 2750
-F 0 "R2" H 3570 2796 50  0000 L CNN
-F 1 "220" H 3570 2705 50  0000 L CNN
-F 2 "" V 3430 2750 50  0001 C CNN
-F 3 "~" H 3500 2750 50  0001 C CNN
-	1    3500 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2600 3500 2600
-$Comp
-L power:VCC #PWR03
-U 1 1 6137A50C
-P 3500 2350
-F 0 "#PWR03" H 3500 2200 50  0001 C CNN
-F 1 "VCC" H 3515 2523 50  0000 C CNN
-F 2 "" H 3500 2350 50  0001 C CNN
-F 3 "" H 3500 2350 50  0001 C CNN
-	1    3500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 2600 3500 2350
-Connection ~ 3500 2600
-Text Notes 600  700  0    50   ~ 10
-MIDI Input
-Text Notes 600  1500 0    50   Italic 0
-Takes the MIDI input from the DIN41524 port and outputs to the UART_RX on the EFM32GG.\n\nThe DIN41524 connector has five pins, but for MIDI communication we only use three\nof them. Pins 1 and 3 are not connected, while pin 2 (the middle pin) is grounded.\nThe two remaining pins (4 and 5), form a current loop from sender to receiver and\nback to the sender. This way we can send "0"s and "1"s by looking for the precence\nor absence of electrical current.\n\nhttp://sandsoftwaresound.net/5-pin-midi-interface-arduino/
-Wire Wire Line
-	3500 2900 3850 2900
-Connection ~ 3500 2900
-Text GLabel 3850 2900 2    50   Output ~ 0
-MIDI_RX
 $Comp
 L Connector:AudioJack3 J2
 U 1 1 61366BDF
@@ -187,103 +53,149 @@ Wire Notes Line
 	4250 3450 4250 5250
 Wire Notes Line
 	550  5250 550  3450
-NoConn ~ 3250 2700
 Wire Notes Line
-	4250 550  550  550 
+	7450 2900 11150 2900
 Wire Notes Line
-	4250 3400 4250 550 
+	11150 2900 11150 550 
 Wire Notes Line
-	550  7650 4250 7650
+	11150 550  7450 550 
 Wire Notes Line
-	4250 7650 4250 5300
-Wire Notes Line
-	4250 5300 550  5300
-Wire Notes Line
-	550  5300 550  7650
-Text Notes 600  5400 0    50   ~ 10
+	7450 550  7450 2900
+Text Notes 7500 650  0    50   ~ 10
 EFM32 Debug Interface
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J3
 U 1 1 613A6A76
-P 2950 6800
-F 0 "J3" H 3000 7417 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 3000 7326 50  0000 C CNN
-F 2 "" H 2950 6800 50  0001 C CNN
-F 3 "~" H 2950 6800 50  0001 C CNN
-	1    2950 6800
+P 9750 2050
+F 0 "J3" H 9800 2667 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 9800 2576 50  0000 C CNN
+F 2 "" H 9750 2050 50  0001 C CNN
+F 3 "~" H 9750 2050 50  0001 C CNN
+	1    9750 2050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3250 6400
-Text GLabel 2750 6700 0    50   BiDi ~ 10
-DBG_SWDIO
-Text GLabel 2750 6800 0    50   BiDi ~ 10
-DBG_SWCLK
-Text GLabel 2750 7000 0    50   Output ~ 10
-DBG_SWO
-NoConn ~ 2750 6500
-NoConn ~ 2750 6600
-NoConn ~ 2750 6900
-Text GLabel 2750 7100 0    50   Output ~ 10
-RESETn
+NoConn ~ 10050 1650
+NoConn ~ 9550 1750
+NoConn ~ 9550 1850
+NoConn ~ 9550 2150
 $Comp
 L power:GND #PWR04
 U 1 1 613B8CA5
-P 3400 7350
-F 0 "#PWR04" H 3400 7100 50  0001 C CNN
-F 1 "GND" H 3405 7177 50  0000 C CNN
-F 2 "" H 3400 7350 50  0001 C CNN
-F 3 "" H 3400 7350 50  0001 C CNN
-	1    3400 7350
+P 10200 2600
+F 0 "#PWR04" H 10200 2350 50  0001 C CNN
+F 1 "GND" H 10205 2427 50  0000 C CNN
+F 2 "" H 10200 2600 50  0001 C CNN
+F 3 "" H 10200 2600 50  0001 C CNN
+	1    10200 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 7300 3400 7300
+	10050 2550 10200 2550
 Wire Wire Line
-	3250 7200 3400 7200
+	10050 2450 10200 2450
 Wire Wire Line
-	3400 7200 3400 7300
-Connection ~ 3400 7300
+	10200 2450 10200 2550
+Connection ~ 10200 2550
 Wire Wire Line
-	3400 7300 3400 7350
+	10200 2550 10200 2600
 Wire Wire Line
-	3250 7100 3400 7100
-Connection ~ 3400 7200
+	10050 2350 10200 2350
+Connection ~ 10200 2450
 Wire Wire Line
-	3250 7000 3400 7000
-Connection ~ 3400 7100
+	10050 2250 10200 2250
+Connection ~ 10200 2350
 Wire Wire Line
-	3400 7100 3400 7200
+	10200 2350 10200 2450
 Wire Wire Line
-	3250 6900 3400 6900
+	10050 2150 10200 2150
 Wire Wire Line
-	3400 6900 3400 7000
-Connection ~ 3400 7000
+	10200 2150 10200 2250
+Connection ~ 10200 2250
 Wire Wire Line
-	3400 7000 3400 7100
+	10200 2250 10200 2350
 Wire Wire Line
-	3250 6800 3400 6800
-Connection ~ 3400 6900
+	10050 2050 10200 2050
+Connection ~ 10200 2150
 Wire Wire Line
-	3250 6700 3400 6700
+	10050 1950 10200 1950
 Wire Wire Line
-	3400 6700 3400 6800
-Connection ~ 3400 6800
+	10200 1950 10200 2050
+Connection ~ 10200 2050
 Wire Wire Line
-	3400 6800 3400 6900
+	10200 2050 10200 2150
 Wire Wire Line
-	3250 6600 3400 6600
-Connection ~ 3400 6700
+	10050 1850 10200 1850
+Connection ~ 10200 1950
 Wire Wire Line
-	3250 6500 3400 6500
+	10050 1750 10200 1750
 Wire Wire Line
-	3400 6500 3400 6600
-Connection ~ 3400 6600
+	10200 1750 10200 1850
+Connection ~ 10200 1850
 Wire Wire Line
-	3400 6600 3400 6700
-NoConn ~ 2750 7200
-NoConn ~ 2750 7300
-Text GLabel 2750 6400 0    50   Output ~ 10
-VMCU
-Text Notes 600  6000 0    50   Italic 0
+	10200 1850 10200 1950
+NoConn ~ 9550 2450
+NoConn ~ 9550 2550
+Text Notes 7500 1250 0    50   Italic 0
 The debug interface uses the SW-DP protocol. This is a packet based protocol\nthat uses a unidirectional clock signal (DBG_SWCLK) and a bi-directional data\nsignal (DBG_SWDIO). The debugger (usually) drives the clock signal, while\nthe data-line can be driven be either two. The DBG_SWO line is optionally\nincluded for debug output.\n\nhttps://www.silabs.com/documents/public/application-notes/AN0043.pdf
+$Sheet
+S 4950 2950 1900 1700
+U 6139EB2D
+F0 "FPGA" 50
+F1 "FPGA.sch" 50
+$EndSheet
+Wire Wire Line
+	9550 2350 8000 2350
+Wire Wire Line
+	8000 2350 8000 2000
+Wire Wire Line
+	8000 2000 6850 2000
+Wire Wire Line
+	9550 2250 8100 2250
+Wire Wire Line
+	8100 2250 8100 1900
+Wire Wire Line
+	8100 1900 6850 1900
+Wire Wire Line
+	9550 2050 8200 2050
+Wire Wire Line
+	8200 2050 8200 1750
+Wire Wire Line
+	8200 1750 6850 1750
+Wire Wire Line
+	9550 1950 8300 1950
+Wire Wire Line
+	8300 1950 8300 1650
+Wire Wire Line
+	8300 1650 6850 1650
+Wire Wire Line
+	9550 1650 8400 1650
+Wire Wire Line
+	8400 1650 8400 1500
+Wire Wire Line
+	8400 1500 6850 1500
+$Sheet
+S 4950 1100 1900 1550
+U 6139E7E0
+F0 "MCU" 50
+F1 "MCU.sch" 50
+F2 "DBG_SWDIO" O R 6850 1650 50 
+F3 "DBG_SWCLK" O R 6850 1750 50 
+F4 "DBG_SWO" O R 6850 1900 50 
+F5 "RESETn" O R 6850 2000 50 
+F6 "VMCU" O R 6850 1500 50 
+F7 "UO_RX_#1" O L 4950 2550 50 
+$EndSheet
+$Sheet
+S 850  1150 700  250 
+U 613F97F2
+F0 "MIDI-IN" 50
+F1 "MIDI-IN.sch" 50
+F2 "MIDI_IN" O R 1550 1300 50 
+$EndSheet
+Wire Wire Line
+	1550 1300 3200 1300
+Wire Wire Line
+	3200 1300 3200 2550
+Wire Wire Line
+	3200 2550 4950 2550
 $EndSCHEMATC
