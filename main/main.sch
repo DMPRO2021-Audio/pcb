@@ -173,21 +173,6 @@ Wire Wire Line
 	2700 4950 2700 4800
 Wire Wire Line
 	2700 4800 2800 4800
-$Comp
-L energymicro-efm32:EFM32GG990F1024 U2
-U 1 1 6137537F
-P 11850 4000
-F 0 "U2" H 12150 4200 60  0000 L CNN
-F 1 "EFM32GG990F1024" H 15550 600 60  0000 L CNN
-F 2 "" H 11850 4000 50  0001 C CNN
-F 3 "http://www.energymicro.com/downloads/datasheets" H 11850 4000 50  0001 C CNN
-	1    11850 4000
-	1    0    0    -1  
-$EndComp
-Text GLabel 11850 6800 0    50   Output ~ 0
-DAC0
-Text GLabel 11850 6900 0    50   Output ~ 0
-DAC1
 Text GLabel 2800 4600 0    50   Input ~ 0
 DAC0
 Text GLabel 2800 4700 0    50   Input ~ 0
@@ -207,23 +192,6 @@ Wire Notes Line
 	4250 550  550  550 
 Wire Notes Line
 	4250 3400 4250 550 
-Text GLabel 11850 4400 0    50   Input ~ 0
-MIDI_RX
-$Comp
-L energymicro-efm32:EFM32GG990F1024 U3
-U 3 1 61390272
-P 11850 800
-F 0 "U3" H 12150 1050 60  0000 L CNN
-F 1 "EFM32GG990F1024" H 15950 -2100 60  0000 L CNN
-F 2 "" H 11850 800 50  0001 C CNN
-F 3 "http://www.energymicro.com/downloads/datasheets" H 11850 800 50  0001 C CNN
-	3    11850 800 
-	1    0    0    -1  
-$EndComp
-Text GLabel 11850 2500 0    50   BiDi ~ 0
-DBG_SWCLK
-Text GLabel 11850 2600 0    50   BiDi ~ 0
-DBG_SWDIO
 Wire Notes Line
 	550  7650 4250 7650
 Wire Notes Line
@@ -255,30 +223,6 @@ DBG_SWO
 NoConn ~ 2750 6500
 NoConn ~ 2750 6600
 NoConn ~ 2750 6900
-$Comp
-L energymicro-efm32:EFM32GG990F1024 U3
-U 2 1 613B0438
-P 17300 850
-F 0 "U3" H 24568 -497 60  0000 L CNN
-F 1 "EFM32GG990F1024" H 24568 -603 60  0000 L CNN
-F 2 "" H 17300 850 50  0001 C CNN
-F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 850 50  0001 C CNN
-	2    17300 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L energymicro-efm32:EFM32GG990F1024 U3
-U 4 1 613B35C7
-P 17300 4200
-F 0 "U3" H 18100 4537 60  0000 C CNN
-F 1 "EFM32GG990F1024" H 18100 4431 60  0000 C CNN
-F 2 "" H 17300 4200 50  0001 C CNN
-F 3 "http://www.energymicro.com/downloads/datasheets" H 17300 4200 50  0001 C CNN
-	4    17300 4200
-	1    0    0    -1  
-$EndComp
-Text GLabel 17300 4200 0    50   Input ~ 10
-RESETn
 Text GLabel 2750 7100 0    50   Output ~ 10
 RESETn
 $Comp
