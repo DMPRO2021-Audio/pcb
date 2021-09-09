@@ -16,43 +16,37 @@ $EndDescr
 $Comp
 L Connector:AudioJack3 J2
 U 1 1 61366BDF
-P 1300 7150
-F 0 "J2" H 1020 7083 50  0000 R CNN
-F 1 "AudioJack3" H 1020 7174 50  0000 R CNN
-F 2 "" H 1300 7150 50  0001 C CNN
-F 3 "~" H 1300 7150 50  0001 C CNN
-	1    1300 7150
+P 3700 6400
+F 0 "J2" H 3420 6333 50  0000 R CNN
+F 1 "AudioJack3" H 3420 6424 50  0000 R CNN
+F 2 "" H 3700 6400 50  0001 C CNN
+F 3 "~" H 3700 6400 50  0001 C CNN
+	1    3700 6400
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 61367C82
-P 1000 7400
-F 0 "#PWR0101" H 1000 7150 50  0001 C CNN
-F 1 "GND" H 1005 7227 50  0000 C CNN
-F 2 "" H 1000 7400 50  0001 C CNN
-F 3 "" H 1000 7400 50  0001 C CNN
-	1    1000 7400
+P 3400 6650
+F 0 "#PWR0101" H 3400 6400 50  0001 C CNN
+F 1 "GND" H 3405 6477 50  0000 C CNN
+F 2 "" H 3400 6650 50  0001 C CNN
+F 3 "" H 3400 6650 50  0001 C CNN
+	1    3400 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 7400 1000 7250
+	3400 6650 3400 6500
 Wire Wire Line
-	1000 7250 1100 7250
-Text GLabel 1100 7050 0    50   Input ~ 0
-DAC0
-Text GLabel 1100 7150 0    50   Input ~ 0
-DAC1
+	3400 6500 3500 6500
 Wire Notes Line
-	550  6700 2150 6700
+	550  5250 4350 5250
 Wire Notes Line
-	2150 7700 550  7700
-Text Notes 600  6850 0    50   ~ 10
+	4350 7700 550  7700
+Text Notes 600  5400 0    50   ~ 10
 Analog Output (TODO)
 Wire Notes Line
-	2150 6700 2150 7700
-Wire Notes Line
-	550  7700 550  6700
+	550  7700 550  5250
 Wire Notes Line
 	11150 550  7200 550 
 $Sheet
@@ -192,4 +186,53 @@ Wire Wire Line
 	4500 850  4500 2400
 Wire Wire Line
 	4500 2400 4800 2400
+$Comp
+L power:VCC #PWR?
+U 1 1 613A81F9
+P 2600 6700
+F 0 "#PWR?" H 2600 6550 50  0001 C CNN
+F 1 "VCC" V 2615 6828 50  0000 L CNN
+F 2 "" H 2600 6700 50  0001 C CNN
+F 3 "" H 2600 6700 50  0001 C CNN
+	1    2600 6700
+	0    1    1    0   
+$EndComp
+NoConn ~ 2600 6900
+NoConn ~ 2600 6800
+$Comp
+L PCM1780DBQ:PCM1780DBQ IC?
+U 1 1 613A1DD6
+P 900 6200
+F 0 "IC?" H 1150 6350 50  0000 C CNN
+F 1 "PCM1780DBQ" H 2150 5350 50  0000 C CNN
+F 2 "SOP64P600X175-16N" H 2450 6300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/pcm1780" H 2450 6200 50  0001 L CNN
+F 4 "PCM1780DBQ, Audio DAC Octal 24 bit-, 192ksps Serial, 16-Pin SSOP" H 2450 6100 50  0001 L CNN "Description"
+F 5 "1.75" H 2450 6000 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 2450 5900 50  0001 L CNN "Manufacturer_Name"
+F 7 "PCM1780DBQ" H 2450 5800 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-PCM1780DBQ" H 2450 5700 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1780DBQ?qs=wgAEGBTxy7ndC3AC4ryJQw%3D%3D" H 2450 5600 50  0001 L CNN "Mouser Price/Stock"
+F 10 "PCM1780DBQ" H 2450 5500 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/pcm1780dbq/texas-instruments?region=nac" H 2450 5400 50  0001 L CNN "Arrow Price/Stock"
+	1    900  6200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4350 5250 4350 7700
+Wire Wire Line
+	2600 6400 3500 6400
+Wire Wire Line
+	2600 6300 3500 6300
+$Comp
+L power:GND #PWR?
+U 1 1 613B4268
+P 2600 6600
+F 0 "#PWR?" H 2600 6350 50  0001 C CNN
+F 1 "GND" V 2605 6472 50  0000 R CNN
+F 2 "" H 2600 6600 50  0001 C CNN
+F 3 "" H 2600 6600 50  0001 C CNN
+	1    2600 6600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
