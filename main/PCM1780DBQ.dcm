@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCM1780DBQ
+D PCM1780DBQ, Audio DAC Octal 24 bit-, 192ksps Serial, 16-Pin SSOP
+K
+F http://www.ti.com/lit/gpn/pcm1780
+$ENDCMP
+#
+#End Doc Library

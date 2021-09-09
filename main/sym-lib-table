@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name MIDI)(type Legacy)(uri ${KIPRJMOD}/MIDI.lib)(options "")(descr ""))
   (lib (name energymicro-efm32)(type Legacy)(uri ${KIPRJMOD}/energymicro-efm32.lib)(options "")(descr ""))
+  (lib (name PCM1780DBQ)(type Legacy)(uri ${KIPRJMOD}/PCM1780DBQ.lib)(options "")(descr ""))
 )
