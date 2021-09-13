@@ -235,4 +235,77 @@ F 3 "" H 2600 6600 50  0001 C CNN
 	1    2600 6600
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:Rotary_Encoder SW?
+U 1 1 613F108B
+P 8300 5800
+F 0 "SW?" V 8197 6030 50  0000 L CNN
+F 1 "Rotary_Encoder" V 8550 5550 50  0000 L CNN
+F 2 "" H 8150 5960 50  0001 C CNN
+F 3 "~" H 8300 6060 50  0001 C CNN
+	1    8300 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Rotary_Encoder SW?
+U 1 1 613F1EFC
+P 8950 5800
+F 0 "SW?" V 8847 6030 50  0000 L CNN
+F 1 "Rotary_Encoder" V 9200 5550 50  0000 L CNN
+F 2 "" H 8800 5960 50  0001 C CNN
+F 3 "~" H 8950 6060 50  0001 C CNN
+	1    8950 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Rotary_Encoder SW?
+U 1 1 613F258C
+P 9600 5800
+F 0 "SW?" V 9497 6030 50  0000 L CNN
+F 1 "Rotary_Encoder" V 9850 5550 50  0000 L CNN
+F 2 "" H 9450 5960 50  0001 C CNN
+F 3 "~" H 9600 6060 50  0001 C CNN
+	1    9600 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 5500 8200 4800
+Wire Wire Line
+	8300 5500 8300 4800
+Wire Wire Line
+	8400 5500 8400 4800
+Entry Wire Line
+	8200 4800 8300 4700
+Entry Wire Line
+	8300 4800 8400 4700
+Entry Wire Line
+	8400 4800 8500 4700
+Wire Wire Line
+	8850 5500 8850 4800
+Wire Wire Line
+	8950 5500 8950 4800
+Wire Wire Line
+	9050 5500 9050 4800
+Entry Wire Line
+	8850 4800 8950 4700
+Entry Wire Line
+	8950 4800 9050 4700
+Entry Wire Line
+	9050 4800 9150 4700
+Wire Wire Line
+	9500 5500 9500 4800
+Wire Wire Line
+	9600 5500 9600 4800
+Wire Wire Line
+	9700 5500 9700 4800
+Entry Wire Line
+	9500 4800 9600 4700
+Entry Wire Line
+	9600 4800 9700 4700
+Entry Wire Line
+	9700 4800 9800 4700
+Wire Bus Line
+	9800 4700 9800 4500
+Wire Bus Line
+	8300 4700 9800 4700
 $EndSCHEMATC
