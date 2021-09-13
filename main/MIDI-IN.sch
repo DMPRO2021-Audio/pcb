@@ -146,10 +146,10 @@ Wire Wire Line
 Text HLabel 8350 4400 2    50   Output ~ 0
 MIDI_IN
 $Comp
-L Connector:DIN-5_180degree J?
+L Connector:DIN-5_180degree J1
 U 1 1 6146F928
 P 4400 4000
-F 0 "J?" H 4400 3633 50  0000 C CNN
+F 0 "J1" H 4400 3633 50  0000 C CNN
 F 1 "DIN-5_180degree" H 4400 3724 50  0000 C CNN
 F 2 "" H 4400 4000 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4400 4000 50  0001 C CNN
