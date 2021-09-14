@@ -74,8 +74,8 @@ F 3 "" H 7900 4500 50  0001 C CNN
 	1    7900 4500
 	0    1    1    0   
 $EndComp
-Text Notes 3600 3100 0    50   ~ 0
-- ZEROL and ZEROR: Goes high if the input is at a zero level for 1024 sampling periods. \n   Can be used to inform other ICs that there is not current input.
+Text Notes 3400 2700 0    50   ~ 0
+Notes:\n- ZEROL and ZEROR: Goes high if the input is at a zero level for\n   1024 sampling periods.  Can be used to inform other ICs that\n   there is not current input.
 NoConn ~ 4950 3800
 NoConn ~ 6650 3800
 $Comp

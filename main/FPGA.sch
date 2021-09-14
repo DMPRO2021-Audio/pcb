@@ -84,10 +84,10 @@ Text HLabel 8300 2800 0    50   Output ~ 0
 I2S
 Wire Bus Line
 	8450 1750 8300 1750
+Text HLabel 8300 1750 0    50   BiDi ~ 0
+MCU_SPI
 Wire Bus Line
 	8450 2800 8450 3600
 Wire Bus Line
 	8450 1750 8450 2450
-Text HLabel 8300 1750 0    50   BiDi ~ 0
-MCU_SPI
 $EndSCHEMATC

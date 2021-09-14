@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -13,16 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 10200 5800 2    50   Output ~ 0
-DBG_SWDIO
-Text HLabel 10200 5950 2    50   Output ~ 0
-DBG_SWCLK
-Text HLabel 10200 6150 2    50   Output ~ 0
-DBG_SWO
-Text HLabel 10200 6300 2    50   Output ~ 0
-RESETn
-Text HLabel 10200 5650 2    50   Output ~ 0
-VMCU
 $Comp
 L energymicro-efm32:EFM32GG990F1024 U2
 U 3 1 613D4762
@@ -498,10 +488,129 @@ Wire Bus Line
 	7700 3300 7550 3300
 Text HLabel 7550 3300 0    50   BiDi ~ 0
 FPGA_SPI
-Wire Bus Line
-	7700 3300 7700 4000
 Text Label 7800 3650 0    50   ~ 0
 FPGA_SPI0
 Text Label 7800 3800 0    50   ~ 0
 FPGA_SPI1
+Wire Notes Line
+	11100 650  7150 650 
+Text Notes 8200 1600 0    50   Italic 0
+The debug interface uses the SW-DP protocol. This is a packet \nbased protocol that uses a unidirectional clock signal (DBG_SWCLK) \nand a bi-directional data signal (DBG_SWDIO). The debugger (usually)\ndrives the clock signal, while the data-line can be driven be either two.\nThe DBG_SWO line is optionally included for debug output.\n\nhttps://www.silabs.com/documents/public/application-notes/AN0043.pdf
+NoConn ~ 7350 1900
+NoConn ~ 7350 1800
+Wire Wire Line
+	8050 1200 8050 1300
+Connection ~ 8050 1200
+Wire Wire Line
+	8050 1100 8050 1200
+Wire Wire Line
+	7850 1100 8050 1100
+Connection ~ 8050 1300
+Wire Wire Line
+	7850 1200 8050 1200
+Wire Wire Line
+	8050 1400 8050 1500
+Connection ~ 8050 1400
+Wire Wire Line
+	8050 1300 8050 1400
+Wire Wire Line
+	7850 1300 8050 1300
+Connection ~ 8050 1500
+Wire Wire Line
+	7850 1400 8050 1400
+Wire Wire Line
+	8050 1600 8050 1700
+Connection ~ 8050 1600
+Wire Wire Line
+	8050 1500 8050 1600
+Wire Wire Line
+	7850 1500 8050 1500
+Wire Wire Line
+	8050 1700 8050 1800
+Connection ~ 8050 1700
+Wire Wire Line
+	7850 1600 8050 1600
+Connection ~ 8050 1800
+Wire Wire Line
+	7850 1700 8050 1700
+Wire Wire Line
+	8050 1900 8050 1950
+Connection ~ 8050 1900
+Wire Wire Line
+	8050 1800 8050 1900
+Wire Wire Line
+	7850 1800 8050 1800
+Wire Wire Line
+	7850 1900 8050 1900
+$Comp
+L power:GND #PWR?
+U 1 1 614132A5
+P 8050 1950
+AR Path="/614132A5" Ref="#PWR?"  Part="1" 
+AR Path="/6139E7E0/614132A5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 1700 50  0001 C CNN
+F 1 "GND" H 8055 1777 50  0000 C CNN
+F 2 "" H 8050 1950 50  0001 C CNN
+F 3 "" H 8050 1950 50  0001 C CNN
+	1    8050 1950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 1500
+NoConn ~ 7350 1200
+NoConn ~ 7350 1100
+NoConn ~ 7850 1000
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 614132AF
+P 7550 1400
+AR Path="/614132AF" Ref="J?"  Part="1" 
+AR Path="/6139E7E0/614132AF" Ref="J?"  Part="1" 
+F 0 "J?" H 7600 2017 50  0000 C CNN
+F 1 "MCU_debug" H 7600 1926 50  0000 C CNN
+F 2 "" H 7550 1400 50  0001 C CNN
+F 3 "~" H 7550 1400 50  0001 C CNN
+	1    7550 1400
+	1    0    0    -1  
+$EndComp
+Text Notes 8200 900  0    50   ~ 10
+EFM32 Debug Interface
+Wire Notes Line
+	7150 650  7150 2250
+Wire Notes Line
+	11100 2250 11100 650 
+Wire Notes Line
+	7150 2250 11100 2250
+Wire Wire Line
+	6650 1300 7350 1300
+Wire Wire Line
+	6650 1600 7350 1600
+Wire Wire Line
+	6650 1700 7350 1700
+Wire Wire Line
+	6650 1400 7350 1400
+Text Label 6850 1300 0    50   ~ 0
+DBG_SWDIO
+Text Label 6850 1400 0    50   ~ 0
+DBG_SWCLK
+Text Label 6850 1600 0    50   ~ 0
+DBG_SWO
+Text Label 6850 1700 0    50   ~ 0
+RESETn
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61424886
+P 6900 800
+F 0 "#PWR?" H 6900 650 50  0001 C CNN
+F 1 "+3.3V" H 6915 973 50  0000 C CNN
+F 2 "" H 6900 800 50  0001 C CNN
+F 3 "" H 6900 800 50  0001 C CNN
+	1    6900 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 800  6900 1000
+Wire Wire Line
+	6900 1000 7350 1000
+Wire Bus Line
+	7700 3300 7700 4000
 $EndSCHEMATC
