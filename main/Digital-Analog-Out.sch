@@ -264,18 +264,6 @@ Text HLabel 3500 3850 0    50   Input ~ 0
 DAC_MODE_DATA
 Text HLabel 3500 4050 0    50   Input ~ 0
 DAC_SYS_CLK
-Text HLabel 3500 4250 0    50   Input ~ 0
-DAC_I2S_DATA
-Text HLabel 3500 4450 0    50   Input ~ 0
-DAC_I2S_CLK
-Text HLabel 3500 4650 0    50   Input ~ 0
-DAC_I2S_LR_SELECT
-Wire Wire Line
-	3500 4650 3700 4650
-Wire Wire Line
-	3500 4450 3700 4450
-Wire Wire Line
-	3500 4250 3700 4250
 Wire Wire Line
 	3500 4050 3700 4050
 Wire Notes Line
@@ -286,14 +274,6 @@ Wire Notes Line
 	3600 3350 2600 3350
 Wire Notes Line
 	2600 3350 2600 3950
-Wire Notes Line
-	2600 4150 2600 4750
-Wire Notes Line
-	3600 4750 3600 4150
-Wire Notes Line
-	3600 4150 2600 4150
-Wire Notes Line
-	2600 4750 3600 4750
 Wire Wire Line
 	7600 3350 8850 3350
 Wire Wire Line
@@ -332,4 +312,36 @@ Wire Notes Line style solid
 	7950 3200 8050 3100
 Wire Notes Line style solid
 	7950 3400 8050 3300
+Entry Wire Line
+	1550 4650 1450 4550
+Entry Wire Line
+	1550 4450 1450 4350
+Entry Wire Line
+	1550 4250 1450 4150
+Text Label 1300 4000 0    50   ~ 0
+I2S[0..2]
+Text Label 1950 4650 2    50   ~ 0
+I2S2
+Text Label 1950 4450 2    50   ~ 0
+I2S1
+Text Label 1950 4250 2    50   ~ 0
+I2S0
+Wire Bus Line
+	1450 4000 1250 4000
+Text HLabel 1250 4000 0    50   Input ~ 0
+I2S[0..2]
+Wire Wire Line
+	1550 4250 3700 4250
+Wire Wire Line
+	1550 4450 3700 4450
+Wire Wire Line
+	1550 4650 3700 4650
+Text Label 2550 4250 0    50   ~ 0
+DAC_I2S_DATA
+Text Label 2550 4450 0    50   ~ 0
+DAC_I2S_CLK
+Text Label 2550 4650 0    50   ~ 0
+DAC_I2S_LR_SELECT
+Wire Bus Line
+	1450 4000 1450 4550
 $EndSCHEMATC

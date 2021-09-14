@@ -462,13 +462,13 @@ Entry Wire Line
 	7700 3700 7800 3800
 Entry Wire Line
 	7700 3550 7800 3650
-Text HLabel 8250 4100 2    50   Input ~ 0
+Text HLabel 8650 4100 2    50   Input ~ 0
 ~MCU_SPI_PS
-Text HLabel 8250 3950 2    50   Output ~ 0
+Text HLabel 8650 3950 2    50   Output ~ 0
 MCU_SPI_CIPO
-Text HLabel 8250 3800 2    50   Input ~ 0
+Text HLabel 8650 3800 2    50   Input ~ 0
 MCU_SPI_COPI
-Text HLabel 8250 3650 2    50   Input ~ 0
+Text HLabel 8650 3650 2    50   Input ~ 0
 MCU_SPI_PCLK
 Text Label 7700 3350 0    50   ~ 0
 FPGA_SPI[0..3]
@@ -477,17 +477,17 @@ FPGA_SPI2
 Text Label 7800 4100 0    50   ~ 0
 FPGA_SPI3
 Wire Wire Line
-	7800 3650 8250 3650
+	7800 3650 8650 3650
 Wire Wire Line
-	7800 3800 8250 3800
+	7800 3800 8650 3800
 Wire Wire Line
-	7800 3950 8250 3950
+	7800 3950 8650 3950
 Wire Wire Line
-	7800 4100 8250 4100
+	7800 4100 8650 4100
 Wire Bus Line
 	7700 3300 7550 3300
 Text HLabel 7550 3300 0    50   BiDi ~ 0
-FPGA_SPI
+FPGA_SPI[0..3]
 Text Label 7800 3650 0    50   ~ 0
 FPGA_SPI0
 Text Label 7800 3800 0    50   ~ 0
