@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCM1741E
+D PCM1741E, Audio DAC Dual 24 bit-, 96ksps +/-6%FSR Serial (SPI), 16-Pin SSOP
+K
+F http://www.ti.com/lit/gpn/PCM1741
+$ENDCMP
+#
+#End Doc Library

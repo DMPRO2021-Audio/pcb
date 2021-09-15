@@ -1,0 +1,359 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PCM1741E:PCM1741E IC?
+U 1 1 614975F8
+P 5050 3650
+F 0 "IC?" H 5800 3915 50  0000 C CNN
+F 1 "PCM1741E" H 5800 3824 50  0000 C CNN
+F 2 "SOP63P600X175-16N" H 6400 3750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/PCM1741" H 6400 3650 50  0001 L CNN
+F 4 "PCM1741E, Audio DAC Dual 24 bit-, 96ksps +/-6%FSR Serial (SPI), 16-Pin SSOP" H 6400 3550 50  0001 L CNN "Description"
+F 5 "" H 6400 3450 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 6400 3350 50  0001 L CNN "Manufacturer_Name"
+F 7 "PCM1741E" H 6400 3250 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-PCM1741E" H 6400 3150 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1741E?qs=wgAEGBTxy7nKC%252BqE%2FGOzOw%3D%3D" H 6400 3050 50  0001 L CNN "Mouser Price/Stock"
+F 10 "PCM1741E" H 6400 2950 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/pcm1741e/texas-instruments" H 6400 2850 50  0001 L CNN "Arrow Price/Stock"
+	1    5050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J?
+U 1 1 6149A5BA
+P 5000 5550
+F 0 "J?" H 4982 5875 50  0000 C CNN
+F 1 "AudioJack3" H 4982 5784 50  0000 C CNN
+F 2 "" H 5000 5550 50  0001 C CNN
+F 3 "~" H 5000 5550 50  0001 C CNN
+	1    5000 5550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 4350 5000 4350
+$Comp
+L power:GNDA #PWR?
+U 1 1 6149B0F4
+P 5100 5350
+F 0 "#PWR?" H 5100 5100 50  0001 C CNN
+F 1 "GNDA" H 5105 5177 50  0000 C CNN
+F 2 "" H 5100 5350 50  0001 C CNN
+F 3 "" H 5100 5350 50  0001 C CNN
+	1    5100 5350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6149F240
+P 3350 3300
+AR Path="/6149F240" Ref="R?"  Part="1" 
+AR Path="/61417224/6149F240" Ref="R?"  Part="1" 
+AR Path="/61496F7B/6149F240" Ref="R?"  Part="1" 
+F 0 "R?" V 3350 3300 50  0000 C CNN
+F 1 "22-100" V 3250 3300 50  0000 C CNN
+F 2 "" V 3280 3300 50  0001 C CNN
+F 3 "~" H 3350 3300 50  0001 C CNN
+	1    3350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6149F246
+P 3050 3300
+AR Path="/6149F246" Ref="R?"  Part="1" 
+AR Path="/61417224/6149F246" Ref="R?"  Part="1" 
+AR Path="/61496F7B/6149F246" Ref="R?"  Part="1" 
+F 0 "R?" V 3050 3300 50  0000 C CNN
+F 1 "22-100" V 2950 3300 50  0000 C CNN
+F 2 "" V 2980 3300 50  0001 C CNN
+F 3 "~" H 3050 3300 50  0001 C CNN
+	1    3050 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6149F24C
+P 3650 3300
+AR Path="/6149F24C" Ref="R?"  Part="1" 
+AR Path="/61417224/6149F24C" Ref="R?"  Part="1" 
+AR Path="/61496F7B/6149F24C" Ref="R?"  Part="1" 
+F 0 "R?" V 3650 3300 50  0000 C CNN
+F 1 "22-100" V 3550 3300 50  0000 C CNN
+F 2 "" V 3580 3300 50  0001 C CNN
+F 3 "~" H 3650 3300 50  0001 C CNN
+	1    3650 3300
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	3550 2550 3650 2650
+Entry Wire Line
+	3250 2550 3350 2650
+Entry Wire Line
+	2950 2550 3050 2650
+Text Label 3050 2550 2    50   ~ 0
+I2S[0..2]
+Text Label 3050 2950 2    50   ~ 0
+I2S2
+Text Label 3350 2950 2    50   ~ 0
+I2S1
+Text Label 3650 2950 2    50   ~ 0
+I2S0
+Text HLabel 2500 2550 0    50   Input ~ 0
+I2S[0..2]
+Wire Wire Line
+	3350 2650 3350 3150
+Wire Wire Line
+	3050 2650 3050 3150
+Wire Wire Line
+	3650 2650 3650 3150
+Wire Wire Line
+	3650 3450 3650 3650
+Wire Wire Line
+	3050 3450 3050 3750
+Wire Wire Line
+	3350 3450 3350 3850
+Text Label 4200 3750 0    50   ~ 0
+DAC_I2S_DATA
+Text Label 4200 3850 0    50   ~ 0
+DAC_I2S_LR_SELECT
+Text Label 4200 3650 0    50   ~ 0
+DAC_I2S_CLK
+Wire Wire Line
+	3650 3650 5050 3650
+Wire Wire Line
+	6550 3650 6900 3650
+Wire Wire Line
+	6900 3650 6900 2750
+Wire Wire Line
+	6900 2750 6800 2750
+$Comp
+L Device:R R?
+U 1 1 614A0D57
+P 6650 2750
+AR Path="/614A0D57" Ref="R?"  Part="1" 
+AR Path="/61417224/614A0D57" Ref="R?"  Part="1" 
+AR Path="/61496F7B/614A0D57" Ref="R?"  Part="1" 
+F 0 "R?" V 6650 2750 50  0000 C CNN
+F 1 "22-100" V 6550 2750 50  0000 C CNN
+F 2 "" V 6580 2750 50  0001 C CNN
+F 3 "~" H 6650 2750 50  0001 C CNN
+	1    6650 2750
+	0    -1   -1   0   
+$EndComp
+Text HLabel 6350 2750 0    50   Input ~ 0
+DAC_SYS_CLK
+Wire Wire Line
+	6500 2750 6350 2750
+NoConn ~ 6550 4050
+NoConn ~ 6550 4150
+$Comp
+L Device:CP1 C?
+U 1 1 614A3178
+P 7250 4400
+F 0 "C?" H 7365 4446 50  0000 L CNN
+F 1 "10uF" H 7365 4355 50  0000 L CNN
+F 2 "" H 7250 4400 50  0001 C CNN
+F 3 "~" H 7250 4400 50  0001 C CNN
+	1    7250 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4250 7250 4250
+$Comp
+L power:GNDA #PWR?
+U 1 1 614A4529
+P 7250 4600
+F 0 "#PWR?" H 7250 4350 50  0001 C CNN
+F 1 "GNDA" H 7255 4427 50  0000 C CNN
+F 2 "" H 7250 4600 50  0001 C CNN
+F 3 "" H 7250 4600 50  0001 C CNN
+	1    7250 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4350 7000 4600
+Wire Wire Line
+	7000 4600 7250 4600
+Wire Wire Line
+	7250 4600 7250 4550
+Connection ~ 7250 4600
+Wire Wire Line
+	7000 4350 6550 4350
+Wire Wire Line
+	3050 3750 5050 3750
+Wire Wire Line
+	3350 3850 5050 3850
+Wire Wire Line
+	3750 4600 3750 4450
+Wire Wire Line
+	4700 4450 4700 4150
+$Comp
+L Device:CP1 C?
+U 1 1 614B25E2
+P 3750 4750
+F 0 "C?" H 3865 4796 50  0000 L CNN
+F 1 "10uF" H 3865 4705 50  0000 L CNN
+F 2 "" H 3750 4750 50  0001 C CNN
+F 3 "~" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 614B2E1B
+P 3750 4900
+F 0 "#PWR?" H 3750 4650 50  0001 C CNN
+F 1 "GNDA" H 3755 4727 50  0000 C CNN
+F 2 "" H 3750 4900 50  0001 C CNN
+F 3 "" H 3750 4900 50  0001 C CNN
+	1    3750 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4450 4700 4450
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 614B4892
+P 2100 4900
+F 0 "#PWR?" H 2100 4750 50  0001 C CNN
+F 1 "+3.3VA" H 2115 5073 50  0000 C CNN
+F 2 "" H 2100 4900 50  0001 C CNN
+F 3 "" H 2100 4900 50  0001 C CNN
+	1    2100 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614B5261
+P 2150 3950
+F 0 "#PWR?" H 2150 3700 50  0001 C CNN
+F 1 "GND" V 2155 3822 50  0000 R CNN
+F 2 "" H 2150 3950 50  0001 C CNN
+F 3 "" H 2150 3950 50  0001 C CNN
+	1    2150 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 3950 3750 3950
+Wire Wire Line
+	5050 4150 4700 4150
+Wire Wire Line
+	5050 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4250
+Wire Wire Line
+	4600 4250 3750 4250
+$Comp
+L Device:CP1 C?
+U 1 1 614B8248
+P 3750 4100
+F 0 "C?" H 3865 4146 50  0000 L CNN
+F 1 "10uF" H 3865 4055 50  0000 L CNN
+F 2 "" H 3750 4100 50  0001 C CNN
+F 3 "~" H 3750 4100 50  0001 C CNN
+	1    3750 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 3950
+Wire Wire Line
+	3750 3950 5050 3950
+Connection ~ 3750 4250
+Wire Wire Line
+	3750 4250 3000 4250
+Wire Wire Line
+	5000 4350 5000 5350
+Wire Wire Line
+	4900 4250 4900 5350
+Wire Wire Line
+	4900 4250 5050 4250
+$Comp
+L Regulator_Linear:LM1084-3.3 U?
+U 1 1 614C1BF7
+P 2700 4250
+F 0 "U?" H 2700 4492 50  0000 C CNN
+F 1 "LM1084-3.3" H 2700 4401 50  0000 C CNN
+F 2 "" H 2700 4500 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 2700 4250 50  0001 C CNN
+	1    2700 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4900 2100 4800
+Wire Wire Line
+	2100 4250 2400 4250
+Wire Wire Line
+	2100 4800 3500 4800
+Wire Wire Line
+	3500 4800 3500 4450
+Wire Wire Line
+	3500 4450 3750 4450
+Connection ~ 2100 4800
+Wire Wire Line
+	2100 4800 2100 4250
+Connection ~ 3750 4450
+$Comp
+L power:GNDA #PWR?
+U 1 1 614C8204
+P 2700 4550
+F 0 "#PWR?" H 2700 4300 50  0001 C CNN
+F 1 "GNDA" H 2705 4377 50  0000 C CNN
+F 2 "" H 2700 4550 50  0001 C CNN
+F 3 "" H 2700 4550 50  0001 C CNN
+	1    2700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 3750 7500 3750
+Wire Wire Line
+	7500 3750 7500 3200
+Wire Wire Line
+	6550 3850 7700 3850
+Wire Wire Line
+	7700 3850 7700 3400
+Wire Wire Line
+	6550 3950 7900 3950
+Wire Wire Line
+	7900 3950 7900 3600
+Wire Notes Line
+	9000 3100 9000 3700
+Wire Notes Line
+	8000 3100 9000 3100
+Wire Notes Line
+	8000 3700 8000 3100
+Wire Notes Line
+	9000 3700 8000 3700
+Text HLabel 8100 3600 2    50   Input ~ 0
+DAC_MODE_DATA
+Text HLabel 8100 3400 2    50   Input ~ 0
+DAC_MODE_CTRL_CLK
+Text HLabel 8100 3200 2    50   Input ~ 0
+DAC_MODE_LATCH
+Wire Wire Line
+	7900 3600 8100 3600
+Wire Wire Line
+	7700 3400 8100 3400
+Wire Wire Line
+	7500 3200 8100 3200
+Text Label 6650 3750 0    50   ~ 0
+DAC_MODE_LATCH
+Text Label 6650 3850 0    50   ~ 0
+DAC_MODE_CTRL_CLK
+Text Label 6650 3950 0    50   ~ 0
+DAC_MODE_DATA
+Wire Bus Line
+	2500 2550 3550 2550
+$EndSCHEMATC

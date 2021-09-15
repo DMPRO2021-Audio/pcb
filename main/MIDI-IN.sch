@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -113,17 +113,6 @@ F 3 "~" H 6900 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4450 6900 4450
-$Comp
-L power:VCC #PWR03
-U 1 1 61403643
-P 6900 4200
-F 0 "#PWR03" H 6900 4050 50  0001 C CNN
-F 1 "VCC" H 6915 4373 50  0000 C CNN
-F 2 "" H 6900 4200 50  0001 C CNN
-F 3 "" H 6900 4200 50  0001 C CNN
-	1    6900 4200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6900 4450 6900 4200
 Connection ~ 6900 4450
@@ -155,5 +144,16 @@ F 2 "" H 4400 4000 50  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4400 4000 50  0001 C CNN
 	1    4400 4000
 	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6148E544
+P 6900 4200
+F 0 "#PWR?" H 6900 4050 50  0001 C CNN
+F 1 "+3.3V" H 6915 4373 50  0000 C CNN
+F 2 "" H 6900 4200 50  0001 C CNN
+F 3 "" H 6900 4200 50  0001 C CNN
+	1    6900 4200
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
