@@ -13,21 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L energymicro-efm32:EFM32GG990F1024 U2
-U 3 1 613D4762
-P 12500 600
-F 0 "U2" H 17718 -697 60  0000 L CNN
-F 1 "EFM32GG990F1024" H 17718 -803 60  0000 L CNN
-F 2 "" H 12500 600 50  0001 C CNN
-F 3 "http://www.energymicro.com/downloads/datasheets" H 12500 600 50  0001 C CNN
-	3    12500 600 
-	1    0    0    -1  
-$EndComp
 Text HLabel 1300 4450 0    50   Input ~ 0
 MIDI_IN
-Wire Wire Line
-	12350 700  12500 700 
 Entry Wire Line
 	1500 5600 1600 5700
 Entry Wire Line
