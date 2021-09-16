@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Synthesizer"
 Date "2021-09-06"
 Rev "v01"
@@ -254,4 +254,10 @@ Wire Wire Line
 	2400 3800 2400 3750
 Wire Wire Line
 	2400 3750 2450 3750
+$Sheet
+S 9850 3300 1000 1150
+U 61447D69
+F0 "AMP_Analog_out" 50
+F1 "AMP_Analog_out.sch" 50
+$EndSheet
 $EndSCHEMATC

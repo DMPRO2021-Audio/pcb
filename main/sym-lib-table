@@ -4,4 +4,5 @@
   (lib (name PCM1741E)(type Legacy)(uri ${KIPRJMOD}/PCM1741E.lib)(options "")(descr ""))
   (lib (name S25FL127S)(type Legacy)(uri ${KIPRJMOD}/S25FL127S.lib)(options "")(descr ""))
   (lib (name EFM32GG12B810F1024Q64)(type Legacy)(uri ${KIPRJMOD}/EFM32GG12B810F1024Q64.lib)(options "")(descr ""))
+  (lib (name TPA6110A2DGN)(type Legacy)(uri ${KIPRJMOD}/TPA6110A2DGN.lib)(options "")(descr ""))
 )

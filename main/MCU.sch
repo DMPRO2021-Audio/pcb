@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -161,8 +161,6 @@ Wire Wire Line
 	1100 5450 1400 5450
 Entry Wire Line
 	1400 5450 1500 5550
-Wire Wire Line
-	1100 5550 1400 5550
 Entry Wire Line
 	1400 5550 1500 5650
 Text Label 1150 4650 0    50   ~ 0
@@ -755,10 +753,6 @@ US0_TX
 Text Label 6650 2750 0    50   ~ 0
 US0_CS
 Wire Bus Line
-	1500 4750 1500 5750
-Wire Bus Line
-	5250 950  5250 1650
-Wire Bus Line
 	5250 950  5100 950 
 Text HLabel 5100 950  0    50   BiDi ~ 0
 FPGA_SPI[0..3]
@@ -773,4 +767,10 @@ F 3 "~" H 1300 1300 50  0001 C CNN
 	1    1300 1300
 	-1   0    0    -1  
 $EndComp
+Wire Bus Line
+	1500 4750 1500 5750
+Wire Bus Line
+	5250 950  5250 1650
+Wire Wire Line
+	1100 5550 1400 5550
 $EndSCHEMATC
