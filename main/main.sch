@@ -14,11 +14,11 @@ Comment3 ""
 Comment4 "TDT4295 Computer Design Project"
 $EndDescr
 $Sheet
-S 1500 2550 700  250 
+S 1050 2550 700  250 
 U 613F97F2
 F0 "MIDI-IN" 50
 F1 "MIDI-IN.sch" 50
-F2 "MIDI_IN" O R 2200 2700 50 
+F2 "MIDI_IN" O R 1750 2700 50 
 $EndSheet
 $Sheet
 S 13300 450  1250 2450
@@ -50,9 +50,12 @@ F0 "MCU" 50
 F1 "MCU.sch" 50
 F2 "MIDI_IN" I L 2450 2700 50 
 F3 "FPGA_SPI[0..3]" B R 4350 3350 50 
+F4 "FBKey0" I L 2450 3750 50 
+F5 "FBKey1" I L 2450 3850 50 
+F6 "FBKey2" I L 2450 3950 50 
 $EndSheet
 Wire Wire Line
-	2200 2700 2450 2700
+	1750 2700 2450 2700
 Wire Bus Line
 	4350 3350 5350 3350
 Wire Bus Line
@@ -68,4 +71,187 @@ F4 "DAC_MODE_DATA" I L 8150 4500 50
 F5 "DAC_MODE_CTRL_CLK" I L 8150 4700 50 
 F6 "DAC_MODE_LATCH" I L 8150 4850 50 
 $EndSheet
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6145369A
+P 800 6450
+F 0 "SW?" V 650 6500 50  0000 L CNN
+F 1 "FBKey0" V 950 6500 50  0000 L CNN
+F 2 "" H 800 6650 50  0001 C CNN
+F 3 "~" H 800 6650 50  0001 C CNN
+	1    800  6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61453C7F
+P 800 7000
+F 0 "R?" H 870 7046 50  0000 L CNN
+F 1 "10k" H 870 6955 50  0000 L CNN
+F 2 "" V 730 7000 50  0001 C CNN
+F 3 "~" H 800 7000 50  0001 C CNN
+	1    800  7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 6145516D
+P 1250 6450
+F 0 "SW?" V 1100 6500 50  0000 L CNN
+F 1 "FBKey1" V 1400 6500 50  0000 L CNN
+F 2 "" H 1250 6650 50  0001 C CNN
+F 3 "~" H 1250 6650 50  0001 C CNN
+	1    1250 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61455173
+P 1250 7000
+F 0 "R?" H 1320 7046 50  0000 L CNN
+F 1 "10k" H 1320 6955 50  0000 L CNN
+F 2 "" V 1180 7000 50  0001 C CNN
+F 3 "~" H 1250 7000 50  0001 C CNN
+	1    1250 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 61455E9E
+P 1700 6450
+F 0 "SW?" V 1550 6500 50  0000 L CNN
+F 1 "FBKey2" V 1850 6500 50  0000 L CNN
+F 2 "" H 1700 6650 50  0001 C CNN
+F 3 "~" H 1700 6650 50  0001 C CNN
+	1    1700 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61455EA4
+P 1700 7000
+F 0 "R?" H 1770 7046 50  0000 L CNN
+F 1 "10k" H 1770 6955 50  0000 L CNN
+F 2 "" V 1630 7000 50  0001 C CNN
+F 3 "~" H 1700 7000 50  0001 C CNN
+	1    1700 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6250 800  6150
+Wire Wire Line
+	1250 6250 1250 6150
+Wire Wire Line
+	1700 6250 1700 6150
+Wire Wire Line
+	1700 6150 2200 6150
+$Comp
+L power:+3.3V #PWR?
+U 1 1 61456654
+P 2200 6150
+F 0 "#PWR?" H 2200 6000 50  0001 C CNN
+F 1 "+3.3V" V 2215 6278 50  0000 L CNN
+F 2 "" H 2200 6150 50  0001 C CNN
+F 3 "" H 2200 6150 50  0001 C CNN
+	1    2200 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61457106
+P 2200 7200
+F 0 "#PWR?" H 2200 6950 50  0001 C CNN
+F 1 "GND" V 2205 7072 50  0000 R CNN
+F 2 "" H 2200 7200 50  0001 C CNN
+F 3 "" H 2200 7200 50  0001 C CNN
+	1    2200 7200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  6850 800  6750
+Wire Wire Line
+	800  7200 800  7150
+Wire Wire Line
+	1250 7150 1250 7200
+Wire Wire Line
+	1700 7150 1700 7200
+Wire Wire Line
+	1700 7200 2200 7200
+Wire Wire Line
+	1250 6850 1250 6750
+Wire Wire Line
+	1700 6850 1700 6750
+Wire Wire Line
+	800  6750 700  6750
+Connection ~ 800  6750
+Wire Wire Line
+	800  6750 800  6650
+Wire Wire Line
+	1250 6750 1150 6750
+Connection ~ 1250 6750
+Wire Wire Line
+	1250 6750 1250 6650
+Wire Wire Line
+	1700 6750 1600 6750
+Connection ~ 1700 6750
+Wire Wire Line
+	1700 6750 1700 6650
+Text Label 700  6100 0    50   ~ 0
+FBKey0
+Text Label 1150 6100 0    50   ~ 0
+FBKey1
+Text Label 1600 6100 0    50   ~ 0
+FBKey2
+Wire Wire Line
+	800  7200 1250 7200
+Connection ~ 1700 7200
+Connection ~ 1250 7200
+Wire Wire Line
+	1250 7200 1700 7200
+Wire Wire Line
+	800  6150 1250 6150
+Connection ~ 1700 6150
+Connection ~ 1250 6150
+Wire Wire Line
+	1250 6150 1700 6150
+Text Notes 700  7400 0    50   ~ 10
+Fallback Input Keys
+Text Notes 700  7650 0    50   ~ 0
+Three input switches that work as a fallback input source\nif there is something wrong with the MIDI input. May be\nprogrammed to do anything else as well.\n
+Wire Notes Line
+	3050 5950 3050 7700
+Wire Notes Line
+	3050 7700 550  7700
+Wire Notes Line
+	550  7700 550  5950
+Wire Wire Line
+	700  6000 700  6750
+Wire Wire Line
+	1150 3850 2450 3850
+Wire Wire Line
+	1150 3850 1150 6750
+Wire Wire Line
+	1600 6000 1600 6750
+Wire Notes Line
+	3050 5950 550  5950
+Wire Wire Line
+	1100 3800 2400 3800
+Wire Wire Line
+	1200 3900 2400 3900
+Wire Wire Line
+	1100 6000 1100 3800
+Wire Wire Line
+	700  6000 1100 6000
+Wire Wire Line
+	1200 6000 1200 3900
+Wire Wire Line
+	1600 6000 1200 6000
+Wire Wire Line
+	2400 3900 2400 3950
+Wire Wire Line
+	2400 3950 2450 3950
+Wire Wire Line
+	2400 3800 2400 3750
+Wire Wire Line
+	2400 3750 2450 3750
 $EndSCHEMATC
