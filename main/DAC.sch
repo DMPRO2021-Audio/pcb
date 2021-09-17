@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -32,30 +32,8 @@ F 11 "https://www.arrow.com/en/products/pcm1741e/texas-instruments" H 6400 2850 
 	1    5050 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:AudioJack3 J?
-U 1 1 6149A5BA
-P 5000 5550
-F 0 "J?" H 4982 5875 50  0000 C CNN
-F 1 "AudioJack3" H 4982 5784 50  0000 C CNN
-F 2 "" H 5000 5550 50  0001 C CNN
-F 3 "~" H 5000 5550 50  0001 C CNN
-	1    5000 5550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5050 4350 5000 4350
-$Comp
-L power:GNDA #PWR?
-U 1 1 6149B0F4
-P 5100 5350
-F 0 "#PWR?" H 5100 5100 50  0001 C CNN
-F 1 "GNDA" H 5105 5177 50  0000 C CNN
-F 2 "" H 5100 5350 50  0001 C CNN
-F 3 "" H 5100 5350 50  0001 C CNN
-	1    5100 5350
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 6149F240
@@ -356,4 +334,8 @@ Text Label 6650 3950 0    50   ~ 0
 DAC_MODE_DATA
 Wire Bus Line
 	2500 2550 3550 2550
+Text HLabel 4900 5350 3    50   Output ~ 0
+OUT_L
+Text HLabel 5000 5350 3    50   Output ~ 0
+OUT_R
 $EndSCHEMATC

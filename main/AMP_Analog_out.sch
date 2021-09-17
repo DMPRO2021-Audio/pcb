@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 6
 Title ""
 Date ""
 Rev ""
@@ -44,12 +44,12 @@ $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 6144FB76
-P 6450 1550
-F 0 "#PWR?" H 6450 1300 50  0001 C CNN
-F 1 "GNDA" V 6455 1422 50  0000 R CNN
-F 2 "" H 6450 1550 50  0001 C CNN
-F 3 "" H 6450 1550 50  0001 C CNN
-	1    6450 1550
+P 6450 1850
+F 0 "#PWR?" H 6450 1600 50  0001 C CNN
+F 1 "GNDA" V 6455 1722 50  0000 R CNN
+F 2 "" H 6450 1850 50  0001 C CNN
+F 3 "" H 6450 1850 50  0001 C CNN
+	1    6450 1850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -90,7 +90,7 @@ L Device:CP1 C?
 U 1 1 61453C17
 P 6300 1550
 F 0 "C?" V 6552 1550 50  0000 C CNN
-F 1 "CP1" V 6461 1550 50  0000 C CNN
+F 1 "10uF" V 6461 1550 50  0000 C CNN
 F 2 "" H 6300 1550 50  0001 C CNN
 F 3 "~" H 6300 1550 50  0001 C CNN
 	1    6300 1550
@@ -99,11 +99,11 @@ $EndComp
 Text Notes 5700 1250 0    50   ~ 0
 Wow, a decoupling capacitor! \nWho would have thought?\n
 Wire Notes Line
-	5650 1050 5650 1750
+	5650 1050 5650 2250
 Wire Notes Line
-	5650 1750 7000 1750
+	5650 2250 7000 2250
 Wire Notes Line
-	7000 1750 7000 1050
+	7000 2250 7000 1050
 Wire Notes Line
 	7000 1050 5650 1050
 $Comp
@@ -228,4 +228,29 @@ $EndComp
 Connection ~ 6900 4450
 Wire Wire Line
 	6900 4450 6900 5150
+$Comp
+L Device:C C?
+U 1 1 6146271B
+P 6300 1850
+F 0 "C?" V 6150 1850 50  0000 C CNN
+F 1 "0.1uF" V 6450 1850 50  0000 C CNN
+F 2 "" H 6338 1700 50  0001 C CNN
+F 3 "~" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 1850 6150 1550
+Connection ~ 6150 1550
+Wire Wire Line
+	6450 1550 6450 1850
+Connection ~ 6450 1850
+Wire Wire Line
+	7200 4000 7800 4000
+Wire Wire Line
+	7200 4450 7800 4450
+Text HLabel 7800 4000 2    50   Output ~ 0
+AUDIO_OUT_L
+Text HLabel 7800 4450 2    50   Output ~ 0
+AUDIO_OUT_R
 $EndSCHEMATC
