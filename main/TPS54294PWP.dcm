@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS54294PWP
+D 4.5 V to 18 V input, dual 2 A output, synchronous step-down converter, with 1 ms fixed soft start
+K
+F http://www.ti.com/lit/gpn/TPS54294
+$ENDCMP
+#
+#End Doc Library
