@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title "Audio project FPGA connections"
 Date ""
 Rev "V01"
@@ -21,14 +21,6 @@ Entry Wire Line
 	12500 7700 12600 7800
 Entry Wire Line
 	12500 7550 12600 7650
-Text HLabel 13250 8100 2    50   Input ~ 0
-~MCU_SPI_PS
-Text HLabel 13250 7950 2    50   Output ~ 0
-MCU_SPI_CIPO
-Text HLabel 13250 7800 2    50   Input ~ 0
-MCU_SPI_COPI
-Text HLabel 13250 7650 2    50   Input ~ 0
-MCU_SPI_PCLK
 Text Label 12500 7350 0    50   ~ 0
 MCU_SPI[0..3]
 Text Label 12600 7650 0    50   ~ 0
@@ -40,13 +32,11 @@ MCU_SPI2
 Text Label 12600 8100 0    50   ~ 0
 MCU_SPI3
 Wire Wire Line
-	12600 7650 13250 7650
+	12600 7800 13950 7800
 Wire Wire Line
-	12600 7800 13250 7800
+	12600 7950 13950 7950
 Wire Wire Line
-	12600 7950 13250 7950
-Wire Wire Line
-	12600 8100 13250 8100
+	12600 8100 13950 8100
 Entry Wire Line
 	12500 9150 12600 9250
 Entry Wire Line
@@ -1650,6 +1640,16 @@ NoConn ~ 10900 2800
 NoConn ~ 10900 2700
 NoConn ~ 10900 2600
 NoConn ~ 10900 2900
+Wire Wire Line
+	12600 7650 13950 7650
+Text Label 13250 7650 0    50   ~ 0
+MCU_SPI_CLK
+Text Label 13250 7800 0    50   ~ 0
+MCU_SPI_MOSI
+Text Label 13250 7950 0    50   ~ 0
+MCU_SPI_MISO
+Text Label 13250 8100 0    50   ~ 0
+MSU_SPI_CS
 Wire Bus Line
 	12500 8350 12500 9150
 Wire Bus Line

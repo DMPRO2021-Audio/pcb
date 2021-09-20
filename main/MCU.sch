@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3650 2950 0    50   Input ~ 0
+Text HLabel 4300 2350 1    50   Input ~ 0
 MIDI_IN
 Entry Wire Line
 	5250 1650 5350 1750
@@ -110,93 +110,83 @@ Text Label 2500 1500 0    50   ~ 0
 HFXTAL_P
 Text Label 2500 1600 0    50   ~ 0
 HFXTAL_N
-Text Notes 650  650  0    50   ~ 10
+Text Notes 600  650  0    50   ~ 10
 High Frequency Crystal
-Text Notes 650  750  0    50   ~ 0
+Text Notes 600  750  0    50   ~ 0
 Used as an external clock so the EFM32GG can run at full speed.
 $Comp
 L Connector:Conn_01x10_Female J4
 U 1 1 6192A3BC
-P 900 5150
-F 0 "J4" H 792 4425 50  0000 C CNN
-F 1 "GPIO breakout" H 792 4516 50  0000 C CNN
-F 2 "" H 900 5150 50  0001 C CNN
-F 3 "~" H 900 5150 50  0001 C CNN
-	1    900  5150
+P 750 5150
+F 0 "J4" H 642 4425 50  0000 C CNN
+F 1 "GPIO breakout" H 600 4500 50  0000 C CNN
+F 2 "" H 750 5150 50  0001 C CNN
+F 3 "~" H 750 5150 50  0001 C CNN
+	1    750  5150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1100 4650 1400 4650
+	950  4650 1250 4650
 Entry Wire Line
-	1400 4650 1500 4750
+	1250 4650 1350 4550
 Wire Wire Line
-	1100 4750 1400 4750
+	950  4750 1250 4750
 Entry Wire Line
-	1400 4750 1500 4850
+	1250 4750 1350 4650
 Wire Wire Line
-	1100 4850 1400 4850
+	950  4850 1250 4850
 Entry Wire Line
-	1400 4850 1500 4950
+	1250 4850 1350 4750
 Wire Wire Line
-	1100 4950 1400 4950
+	950  4950 1250 4950
 Entry Wire Line
-	1400 4950 1500 5050
+	1250 4950 1350 4850
 Wire Wire Line
-	1100 5050 1400 5050
+	950  5050 1250 5050
 Entry Wire Line
-	1400 5050 1500 5150
+	1250 5050 1350 4950
 Wire Wire Line
-	1100 5150 1400 5150
+	950  5150 1250 5150
 Entry Wire Line
-	1400 5150 1500 5250
+	1250 5150 1350 5050
 Wire Wire Line
-	1100 5250 1400 5250
+	950  5250 1250 5250
 Entry Wire Line
-	1400 5250 1500 5350
+	1250 5250 1350 5150
 Wire Wire Line
-	1100 5350 1400 5350
+	950  5350 1250 5350
 Entry Wire Line
-	1400 5350 1500 5450
+	1250 5350 1350 5250
 Wire Wire Line
-	1100 5450 1400 5450
+	950  5450 1250 5450
 Entry Wire Line
-	1400 5450 1500 5550
+	1250 5450 1350 5350
 Entry Wire Line
-	1400 5550 1500 5650
-Text Label 1150 4650 0    50   ~ 0
-GPIO9
-Text Label 1150 4750 0    50   ~ 0
-GPIO8
-Text Label 1150 4850 0    50   ~ 0
-GPIO7
-Text Label 1150 4950 0    50   ~ 0
+	1250 5550 1350 5450
+Text Label 1000 4950 0    50   ~ 0
 GPIO6
-Text Label 1150 5050 0    50   ~ 0
+Text Label 1000 5050 0    50   ~ 0
 GPIO5
-Text Label 1150 5150 0    50   ~ 0
+Text Label 1000 5150 0    50   ~ 0
 GPIO4
-Text Label 1150 5250 0    50   ~ 0
+Text Label 1000 5250 0    50   ~ 0
 GPIO3
-Text Label 1150 5350 0    50   ~ 0
+Text Label 1000 5350 0    50   ~ 0
 GPIO2
-Text Label 1150 5450 0    50   ~ 0
+Text Label 1000 5450 0    50   ~ 0
 GPIO1
-Text Label 1150 5550 0    50   ~ 0
+Text Label 1000 5550 0    50   ~ 0
 GPIO0
-Wire Bus Line
-	1500 5750 2550 5750
-Text Label 1600 5750 0    50   ~ 0
-GPIO[0..9]
 Text Label 6000 1300 0    50   ~ 0
-MCU_SPI_PCLK
+FPGA_SPI_CLK
 Text Label 6000 1450 0    50   ~ 0
-MCU_SPI_COPI
+FPGA_SPI_MOSI
 Text Label 6000 1600 0    50   ~ 0
-MCU_SPI_CIPO
+FPGA_SPI_MISO
 Text Label 6000 1750 0    50   ~ 0
-~MCU_SPI_PS
+FPGA_SPI_CS
 Wire Wire Line
-	3650 2950 4550 2950
+	4300 2950 4650 2950
 Wire Notes Line
 	550  550  550  1850
 Wire Notes Line
@@ -205,18 +195,12 @@ Wire Notes Line
 	3300 1850 3300 550 
 Wire Notes Line
 	3300 550  550  550 
-Text HLabel 1500 7200 0    50   Input ~ 0
-FBKey0
-Text HLabel 1500 7300 0    50   Input ~ 0
-FBKey1
-Text HLabel 1500 7400 0    50   Input ~ 0
+Text HLabel 9700 4300 2    50   Input ~ 0
 FBKey2
-Wire Wire Line
-	1500 7200 1800 7200
-Wire Wire Line
-	1500 7300 1800 7300
-Wire Wire Line
-	1500 7400 1800 7400
+Text HLabel 9700 4400 2    50   Input ~ 0
+FBKey1
+Text HLabel 9700 4500 2    50   Input ~ 0
+FBKey0
 Connection ~ 3950 4750
 Wire Wire Line
 	3950 4750 3950 3250
@@ -238,30 +222,30 @@ $EndComp
 Wire Wire Line
 	9250 6250 4400 6250
 Wire Wire Line
-	8950 3850 6550 3850
+	8950 3850 6650 3850
 Wire Wire Line
-	9050 3950 6550 3950
+	9050 3950 6650 3950
 Wire Wire Line
-	9150 4050 6550 4050
+	9150 4050 6650 4050
 Wire Wire Line
-	3150 5050 4550 5050
+	3150 5050 4650 5050
 Wire Wire Line
-	3250 4950 4550 4950
+	3250 4950 4650 4950
 Wire Wire Line
-	4550 4750 3950 4750
+	4650 4750 3950 4750
 Wire Wire Line
-	4400 4450 4550 4450
+	4400 4450 4650 4450
 Wire Wire Line
-	3950 3250 4550 3250
+	3950 3250 4650 3250
 $Comp
 L EFM32GG12B810F1024Q64:EFM32GG12B810F1024GQ64 U4
 U 1 1 614AC38B
-P 4550 2550
-F 0 "U4" H 5550 2937 60  0000 C CNN
-F 1 "EFM32GG12B810F1024GQ64" H 5550 2831 60  0000 C CNN
-F 2 "EFM32GG12B810F1024Q64:EFM32GG12B810F1024GQ64" H 5550 2790 60  0000 C CNN
-F 3 "" H 4550 2550 60  0000 C CNN
-	1    4550 2550
+P 4650 2550
+F 0 "U4" H 5650 2937 60  0000 C CNN
+F 1 "EFM32GG12B810F1024GQ64" H 5650 2831 60  0000 C CNN
+F 2 "EFM32GG12B810F1024Q64:EFM32GG12B810F1024GQ64" H 5650 2790 60  0001 C CNN
+F 3 "" H 4650 2550 60  0000 C CNN
+	1    4650 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -274,18 +258,16 @@ Wire Wire Line
 	2400 1500 3250 1500
 Wire Wire Line
 	9750 950  10200 950 
-Wire Wire Line
-	9750 750  9750 950 
 $Comp
 L power:+3.3V #PWR0135
 U 1 1 61424886
-P 9750 750
-F 0 "#PWR0135" H 9750 600 50  0001 C CNN
-F 1 "+3.3V" H 9765 923 50  0000 C CNN
-F 2 "" H 9750 750 50  0001 C CNN
-F 3 "" H 9750 750 50  0001 C CNN
-	1    9750 750 
-	1    0    0    -1  
+P 9750 950
+F 0 "#PWR0135" H 9750 800 50  0001 C CNN
+F 1 "+3.3V" H 9765 1123 50  0000 C CNN
+F 2 "" H 9750 950 50  0001 C CNN
+F 3 "" H 9750 950 50  0001 C CNN
+	1    9750 950 
+	0    -1   -1   0   
 $EndComp
 Text Label 9300 1650 0    50   ~ 0
 ~RESET
@@ -443,14 +425,14 @@ F 3 "" H 4050 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 3150 4550 3150
-NoConn ~ 6550 4350
+	4050 3150 4650 3150
+NoConn ~ 6650 4350
 Wire Wire Line
-	6550 3350 7900 3350
+	6650 3350 7900 3350
 Wire Wire Line
-	6550 4450 7900 4450
+	6650 4450 7900 4450
 Wire Wire Line
-	6550 3750 7900 3750
+	6650 3750 7900 3750
 Wire Wire Line
 	7900 3350 7900 3750
 Connection ~ 7900 3750
@@ -493,7 +475,7 @@ F 3 "~" H 8650 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 4950 8650 4950
+	6650 4950 8650 4950
 $Comp
 L Device:C C32
 U 1 1 61582135
@@ -547,7 +529,7 @@ Connection ~ 3300 7150
 Text Notes 2850 7350 0    50   ~ 0
 AVDD
 Wire Wire Line
-	4550 4850 4050 4850
+	4650 4850 4050 4850
 $Comp
 L Device:C C34
 U 1 1 61594E57
@@ -601,8 +583,6 @@ Connection ~ 4350 7150
 Text Notes 4000 7350 0    50   ~ 0
 IOVDD
 Wire Wire Line
-	4550 5150 4050 5150
-Wire Wire Line
 	4050 2450 4050 3150
 Wire Wire Line
 	4050 3150 4050 4850
@@ -611,13 +591,13 @@ Wire Wire Line
 	4050 4850 4050 5150
 Connection ~ 4050 4850
 Wire Wire Line
-	6550 5150 7800 5150
+	6650 5150 7800 5150
 Wire Wire Line
 	7800 3450 7800 5050
 Wire Wire Line
-	6550 3450 7800 3450
+	6650 3450 7800 3450
 Wire Wire Line
-	6550 5350 7900 5350
+	6650 5350 7900 5350
 Wire Wire Line
 	7900 5350 7900 4450
 Connection ~ 7900 4450
@@ -671,7 +651,7 @@ Wire Notes Line
 Wire Notes Line
 	6200 6900 6200 7750
 Wire Wire Line
-	6550 5050 7800 5050
+	6650 5050 7800 5050
 Connection ~ 7800 5050
 Wire Wire Line
 	7800 5050 7800 5150
@@ -690,8 +670,6 @@ $EndComp
 Wire Wire Line
 	7900 5800 7900 5350
 Connection ~ 7900 5350
-Text Notes 4700 6850 0    50   ~ 0
-AN0002.1, page 13
 Wire Wire Line
 	9250 1650 9250 6250
 Wire Wire Line
@@ -703,28 +681,28 @@ Wire Wire Line
 Wire Wire Line
 	7700 1600 7700 2950
 Wire Wire Line
-	7700 2950 6550 2950
+	7700 2950 6650 2950
 Wire Wire Line
 	5350 1600 7700 1600
 Wire Wire Line
 	7650 1450 7650 3050
 Wire Wire Line
-	7650 3050 6550 3050
+	7650 3050 6650 3050
 Wire Wire Line
 	5350 1450 7650 1450
 Wire Wire Line
 	7600 1300 7600 2850
 Wire Wire Line
-	7600 2850 6550 2850
+	7600 2850 6650 2850
 Wire Wire Line
 	5350 1300 7600 1300
 Wire Wire Line
-	6550 2750 7500 2750
+	6650 2750 7500 2750
 Wire Wire Line
 	7500 2750 7500 1750
 Wire Wire Line
 	5350 1750 7500 1750
-Text Label 4500 2950 2    50   ~ 0
+Text Label 4600 2950 2    50   ~ 0
 U0_RX
 Text Label 6650 2850 0    50   ~ 0
 US0_CLK
@@ -743,14 +721,14 @@ L Device:Crystal_GND24 Y1
 U 1 1 619220BC
 P 1300 1300
 F 0 "Y1" H 1200 1500 50  0000 R CNN
-F 1 "72/48MHz" H 1300 1100 50  0000 R CNN
+F 1 "48MHz" H 1300 1100 50  0000 R CNN
 F 2 "" H 1300 1300 50  0001 C CNN
 F 3 "~" H 1300 1300 50  0001 C CNN
 	1    1300 1300
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 5550 1400 5550
+	950  5550 1250 5550
 Wire Wire Line
 	7800 3450 7800 2400
 $Comp
@@ -764,47 +742,403 @@ F 3 "" H 7800 2400 50  0001 C CNN
 	1    7800 2400
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4550 2550
-NoConn ~ 4550 2650
-NoConn ~ 4550 2750
-NoConn ~ 4550 2850
-NoConn ~ 4550 3050
-NoConn ~ 4550 3350
-NoConn ~ 4550 3450
-NoConn ~ 4550 3550
-NoConn ~ 4550 3650
-NoConn ~ 4550 3750
-NoConn ~ 4550 3850
-NoConn ~ 4550 3950
-NoConn ~ 4550 4050
-NoConn ~ 4550 4150
-NoConn ~ 4550 4250
-NoConn ~ 4550 4350
-NoConn ~ 4550 4550
-NoConn ~ 4550 4650
-NoConn ~ 4550 5250
-NoConn ~ 4550 5350
-NoConn ~ 4550 5450
-NoConn ~ 4550 5550
-NoConn ~ 4550 5650
-NoConn ~ 6550 5650
-NoConn ~ 6550 5550
-NoConn ~ 6550 5450
-NoConn ~ 6550 5250
-NoConn ~ 6550 4850
-NoConn ~ 6550 4750
-NoConn ~ 6550 4650
-NoConn ~ 6550 4550
-NoConn ~ 6550 4250
-NoConn ~ 6550 4150
-NoConn ~ 6550 3650
-NoConn ~ 6550 3550
-NoConn ~ 6550 3250
-NoConn ~ 6550 3150
-NoConn ~ 6550 2650
-NoConn ~ 6550 2550
+NoConn ~ 4650 3050
+NoConn ~ 4650 4550
+NoConn ~ 4650 4650
+NoConn ~ 6650 5650
+NoConn ~ 6650 5450
+NoConn ~ 6650 5250
+NoConn ~ 6650 4550
+NoConn ~ 6650 4250
+NoConn ~ 6650 4150
+NoConn ~ 6650 3650
+NoConn ~ 6650 3550
+NoConn ~ 6650 3250
+NoConn ~ 6650 3150
+NoConn ~ 6650 2650
+NoConn ~ 6650 2550
+Wire Wire Line
+	4650 5350 4200 5350
+Wire Wire Line
+	4650 5450 4250 5450
+Wire Wire Line
+	4250 5450 4250 6600
+Wire Wire Line
+	4650 5550 4300 5550
+Wire Wire Line
+	4650 5250 4150 5250
+Wire Wire Line
+	4150 5250 4150 6400
+NoConn ~ 6650 5550
+NoConn ~ 4650 5650
+Wire Wire Line
+	4650 5150 4050 5150
+Wire Wire Line
+	4300 6300 4300 5550
+Wire Wire Line
+	1300 6150 1300 6400
+Wire Wire Line
+	900  6150 1300 6150
+Wire Wire Line
+	900  6200 900  6150
+Wire Wire Line
+	800  6050 800  6200
+Wire Wire Line
+	1400 6050 800  6050
+Wire Wire Line
+	1400 6300 1400 6050
+Wire Wire Line
+	900  6750 900  6700
+Wire Wire Line
+	1300 6750 900  6750
+Wire Wire Line
+	1300 6500 1300 6750
+Wire Wire Line
+	800  6850 800  6700
+Wire Wire Line
+	1400 6850 800  6850
+Wire Wire Line
+	1400 6600 1400 6850
+$Comp
+L Connector_Generic:Conn_02x02_Counter_Clockwise J?
+U 1 1 617FA2E9
+P 800 6500
+F 0 "J?" V 804 6312 50  0000 R CNN
+F 1 "BACKUP_SPI_OUT" H 1150 6650 50  0000 R CNN
+F 2 "" H 800 6500 50  0001 C CNN
+F 3 "~" H 800 6500 50  0001 C CNN
+	1    800  6500
+	0    -1   -1   0   
+$EndComp
+Text Label 1450 6300 0    50   ~ 0
+BACKUP_SPI_CS
+Text Label 1450 6600 0    50   ~ 0
+BACKUP_SPI_CLK
+Text Label 1450 6500 0    50   ~ 0
+BACKUP_SPI_MISO
+Text Label 1450 6400 0    50   ~ 0
+BACKUP_SPI_MOSI
+$Comp
+L Device:LED D?
+U 1 1 6189B0E4
+P 1350 3450
+F 0 "D?" H 1200 3500 50  0000 C CNN
+F 1 "Status LED 3" H 1350 3300 50  0000 C CNN
+F 2 "" H 1350 3450 50  0001 C CNN
+F 3 "~" H 1350 3450 50  0001 C CNN
+	1    1350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6189BBB6
+P 1850 3450
+F 0 "R?" V 1800 3300 50  0000 C CNN
+F 1 "220" V 1850 3450 50  0000 C CNN
+F 2 "" V 1780 3450 50  0001 C CNN
+F 3 "~" H 1850 3450 50  0001 C CNN
+	1    1850 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3450 1700 3450
+Wire Wire Line
+	1200 3450 950  3450
+$Comp
+L power:GND #PWR?
+U 1 1 618B3507
+P 950 2400
+F 0 "#PWR?" H 950 2150 50  0001 C CNN
+F 1 "GND" V 955 2272 50  0000 R CNN
+F 2 "" H 950 2400 50  0001 C CNN
+F 3 "" H 950 2400 50  0001 C CNN
+	1    950  2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 618B492D
+P 1350 3150
+F 0 "D?" H 1200 3200 50  0000 C CNN
+F 1 "Status LED 2" H 1350 3000 50  0000 C CNN
+F 2 "" H 1350 3150 50  0001 C CNN
+F 3 "~" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618B4933
+P 1850 3150
+F 0 "R?" V 1800 3000 50  0000 C CNN
+F 1 "220" V 1850 3150 50  0000 C CNN
+F 2 "" V 1780 3150 50  0001 C CNN
+F 3 "~" H 1850 3150 50  0001 C CNN
+	1    1850 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 3150 1700 3150
+Wire Wire Line
+	1200 3150 950  3150
+$Comp
+L Device:LED D?
+U 1 1 618BB150
+P 1350 2850
+F 0 "D?" H 1200 2900 50  0000 C CNN
+F 1 "Status LED 1" H 1350 2700 50  0000 C CNN
+F 2 "" H 1350 2850 50  0001 C CNN
+F 3 "~" H 1350 2850 50  0001 C CNN
+	1    1350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618BB156
+P 1850 2850
+F 0 "R?" V 1800 2700 50  0000 C CNN
+F 1 "220" V 1850 2850 50  0000 C CNN
+F 2 "" V 1780 2850 50  0001 C CNN
+F 3 "~" H 1850 2850 50  0001 C CNN
+	1    1850 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2850 1700 2850
+Wire Wire Line
+	1200 2850 950  2850
+$Comp
+L Device:LED D?
+U 1 1 618C9146
+P 1350 2550
+F 0 "D?" H 1200 2600 50  0000 C CNN
+F 1 "Status LED 0" H 1350 2400 50  0000 C CNN
+F 2 "" H 1350 2550 50  0001 C CNN
+F 3 "~" H 1350 2550 50  0001 C CNN
+	1    1350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 618C914C
+P 1850 2550
+F 0 "R?" V 1800 2400 50  0000 C CNN
+F 1 "220" V 1850 2550 50  0000 C CNN
+F 2 "" V 1780 2550 50  0001 C CNN
+F 3 "~" H 1850 2550 50  0001 C CNN
+	1    1850 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2550 1700 2550
+Wire Wire Line
+	1200 2550 950  2550
+Wire Wire Line
+	950  3450 950  3150
+Connection ~ 950  2550
+Wire Wire Line
+	950  2550 950  2400
+Connection ~ 950  2850
+Wire Wire Line
+	950  2850 950  2550
+Connection ~ 950  3150
+Wire Wire Line
+	950  3150 950  2850
+Wire Wire Line
+	1400 6300 4300 6300
+Wire Wire Line
+	1300 6400 4150 6400
+Wire Wire Line
+	4200 5350 4200 6500
+Wire Wire Line
+	1300 6500 4200 6500
+Wire Wire Line
+	1400 6600 4250 6600
+Wire Notes Line
+	550  5850 550  7150
+Wire Notes Line
+	550  7150 2650 7150
+Wire Notes Line
+	2650 7150 2650 6800
+Wire Notes Line
+	2650 6800 3000 6800
+Wire Notes Line
+	3000 6800 3000 5850
+Wire Notes Line
+	3000 5850 550  5850
+Text Notes 600  7100 0    50   ~ 0
+Backup SPI breakout for connecting to an external\nFPGA if the on-board FPGA is fried.\n
+Wire Wire Line
+	4300 2350 4300 2950
+Text Label 1000 4850 0    50   ~ 0
+GPIO7
+Text Label 1000 4750 0    50   ~ 0
+GPIO8
+Text Label 1000 4650 0    50   ~ 0
+GPIO9
+Text Label 2150 4450 0    50   ~ 0
+GPIO[0..9]
+Wire Wire Line
+	8350 4500 8350 4850
+Wire Wire Line
+	8350 4850 6650 4850
+Wire Wire Line
+	8350 4500 9700 4500
+Wire Wire Line
+	6650 4750 8250 4750
+Wire Wire Line
+	8250 4750 8250 4400
+Wire Wire Line
+	8250 4400 9700 4400
+Wire Wire Line
+	8150 4650 8150 4300
+Wire Wire Line
+	8150 4300 9700 4300
+Wire Wire Line
+	6650 4650 8150 4650
+Wire Wire Line
+	2050 2650 4650 2650
+Wire Wire Line
+	2000 2850 2050 2850
+Wire Wire Line
+	2150 2750 4650 2750
+Wire Wire Line
+	2000 3150 2150 3150
+Wire Wire Line
+	2250 2850 4650 2850
+Wire Wire Line
+	2000 3450 2250 3450
+Wire Wire Line
+	2050 2850 2050 2650
+Wire Wire Line
+	2150 3150 2150 2750
+Wire Wire Line
+	2250 3450 2250 2850
+Wire Wire Line
+	2000 2550 4650 2550
+Entry Wire Line
+	4150 3450 4250 3350
+Wire Wire Line
+	4250 3350 4650 3350
+Entry Wire Line
+	4150 3550 4250 3450
+Wire Wire Line
+	4250 3450 4650 3450
+Wire Wire Line
+	4250 3550 4650 3550
+Entry Wire Line
+	4150 3650 4250 3550
+Entry Wire Line
+	4150 3750 4250 3650
+Wire Wire Line
+	4250 3650 4650 3650
+Entry Wire Line
+	4150 3850 4250 3750
+Wire Wire Line
+	4250 3750 4650 3750
+Entry Wire Line
+	4150 3950 4250 3850
+Wire Wire Line
+	4250 3850 4650 3850
+Entry Wire Line
+	4150 4050 4250 3950
+Wire Wire Line
+	4250 3950 4650 3950
+Entry Wire Line
+	4150 4150 4250 4050
+Wire Wire Line
+	4250 4050 4650 4050
+Entry Wire Line
+	4150 4250 4250 4150
+Wire Wire Line
+	4250 4150 4650 4150
+Entry Wire Line
+	4150 4350 4250 4250
+Wire Wire Line
+	4250 4250 4650 4250
+Text Label 4350 4250 0    50   ~ 0
+GPIO9
+Text Label 4350 4150 0    50   ~ 0
+GPIO8
+Text Label 4350 4050 0    50   ~ 0
+GPIO7
+Text Label 4350 3350 0    50   ~ 0
+GPIO0
+Text Label 4350 3450 0    50   ~ 0
+GPIO1
+Text Label 4350 3550 0    50   ~ 0
+GPIO2
+Text Label 4350 3650 0    50   ~ 0
+GPIO3
+Text Label 4350 3750 0    50   ~ 0
+GPIO4
+Text Label 4350 3850 0    50   ~ 0
+GPIO5
+Text Label 4350 3950 0    50   ~ 0
+GPIO6
+NoConn ~ 4650 4350
+Wire Bus Line
+	1350 4450 4150 4450
+Wire Notes Line
+	550  2150 550  3800
+Wire Notes Line
+	550  3800 3050 3800
+Wire Notes Line
+	3050 3800 3050 2150
+Wire Notes Line
+	3050 2150 550  2150
+Text Notes 600  2300 0    50   ~ 10
+Status LEDs
+Wire Notes Line
+	550  4050 550  5750
+Wire Notes Line
+	550  5750 3050 5750
+Wire Notes Line
+	3050 5750 3050 4050
+Wire Notes Line
+	3050 4050 550  4050
+Text Notes 600  4200 0    50   ~ 10
+GPIO Breakout
+Wire Notes Line
+	8900 600  8900 2250
+Wire Notes Line
+	8900 2250 11100 2250
+Wire Notes Line
+	11100 2250 11100 600 
+Wire Notes Line
+	11100 600  8900 600 
+Text Notes 8950 750  0    50   ~ 10
+Debug Interface
+Wire Notes Line
+	9350 4100 9350 4750
+Wire Notes Line
+	9350 4750 10800 4750
+Wire Notes Line
+	9350 4100 10800 4100
+Wire Notes Line
+	10800 4100 10800 4750
+Text Notes 9400 4200 0    50   ~ 10
+Fallback Input Keys
+Wire Notes Line
+	4400 550  4400 1900
+Wire Notes Line
+	4400 1900 7450 1900
+Wire Notes Line
+	7450 1900 7450 550 
+Wire Notes Line
+	7450 550  4400 550 
+Text Notes 4450 650  0    50   ~ 10
+FPGA SPI
+Text Notes 4450 850  0    50   ~ 0
+For communication with the FPGA, primarily telling the FPGA what\nsounds to produce.
 Wire Bus Line
 	5250 950  5250 1650
 Wire Bus Line
-	1500 4750 1500 5750
+	4150 3450 4150 4450
+Wire Bus Line
+	1350 4450 1350 5450
+Text Notes 600  5950 0    50   ~ 10
+Backup SPI
+Text Notes 3950 6850 0    50   ~ 10
+Decoupling capacitors (see AN0002.1, page 13)
 $EndSCHEMATC

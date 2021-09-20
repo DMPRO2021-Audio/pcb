@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -336,8 +336,22 @@ Text HLabel 4900 5350 3    50   Output ~ 0
 OUT_L
 Text HLabel 5000 5350 3    50   Output ~ 0
 OUT_R
+Text Notes 2400 5350 0    50   ~ 0
+NOTE: Do we need the linear regulator,\nor can we simply connect to 3.3VA?
+Text Notes 1850 3700 0    50   ~ 0
+Isn't this capacitor the\nwrong way around?
+Wire Notes Line
+	2450 3750 2450 3900
+Wire Notes Line
+	2450 3900 3300 3900
+Wire Notes Line
+	3300 3900 3300 4100
+Wire Notes Line
+	3300 4100 3650 4100
+Wire Notes Line
+	3200 5150 3200 4400
+Wire Notes Line
+	3200 4400 2950 4400
 Wire Bus Line
 	2500 2550 3550 2550
-Text Notes 1550 5250 0    50   ~ 0
-NOTE: Do we need the linear regulator, or can we simply connect to 3.3VA?
 $EndSCHEMATC
