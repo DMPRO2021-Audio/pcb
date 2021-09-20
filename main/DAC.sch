@@ -338,4 +338,6 @@ Text HLabel 5000 5350 3    50   Output ~ 0
 OUT_R
 Wire Bus Line
 	2500 2550 3550 2550
+Text Notes 1550 5250 0    50   ~ 0
+NOTE: Do we need the linear regulator, or can we simply connect to 3.3VA?
 $EndSCHEMATC
