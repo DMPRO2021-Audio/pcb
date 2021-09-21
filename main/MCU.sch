@@ -57,7 +57,7 @@ L Device:C C30
 U 1 1 6191C624
 P 650 1450
 F 0 "C30" H 700 1550 50  0000 L CNN
-F 1 "12p" H 700 1350 50  0000 L CNN
+F 1 "12pF" H 700 1350 50  0000 L CNN
 F 2 "" H 688 1300 50  0001 C CNN
 F 3 "~" H 650 1450 50  0001 C CNN
 	1    650  1450
@@ -68,7 +68,7 @@ L Device:C C31
 U 1 1 6191C9D9
 P 1900 1450
 F 0 "C31" H 1950 1550 50  0000 L CNN
-F 1 "12p" H 1950 1350 50  0000 L CNN
+F 1 "12pF" H 1950 1350 50  0000 L CNN
 F 2 "" H 1938 1300 50  0001 C CNN
 F 3 "~" H 1900 1450 50  0001 C CNN
 	1    1900 1450
@@ -114,68 +114,57 @@ Text Notes 600  650  0    50   ~ 10
 High Frequency Crystal
 Text Notes 600  750  0    50   ~ 0
 Used as an external clock so the EFM32GG can run at full speed.
-$Comp
-L Connector:Conn_01x10_Female J4
-U 1 1 6192A3BC
-P 750 5150
-F 0 "J4" H 642 4425 50  0000 C CNN
-F 1 "GPIO breakout" H 600 4500 50  0000 C CNN
-F 2 "" H 750 5150 50  0001 C CNN
-F 3 "~" H 750 5150 50  0001 C CNN
-	1    750  5150
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	950  4650 1250 4650
+	1800 4600 2100 4600
 Entry Wire Line
-	1250 4650 1350 4550
+	2200 4700 2100 4600
 Wire Wire Line
-	950  4750 1250 4750
+	1800 4700 2100 4700
 Entry Wire Line
-	1250 4750 1350 4650
+	2200 4800 2100 4700
 Wire Wire Line
-	950  4850 1250 4850
+	1800 4800 2100 4800
 Entry Wire Line
-	1250 4850 1350 4750
+	2200 4900 2100 4800
 Wire Wire Line
-	950  4950 1250 4950
+	1800 4900 2100 4900
 Entry Wire Line
-	1250 4950 1350 4850
+	2200 5000 2100 4900
 Wire Wire Line
-	950  5050 1250 5050
+	1800 5000 2100 5000
 Entry Wire Line
-	1250 5050 1350 4950
+	2100 5000 2200 5100
 Wire Wire Line
-	950  5150 1250 5150
+	1300 5000 1000 5000
 Entry Wire Line
-	1250 5150 1350 5050
+	1000 5000 900  5100
 Wire Wire Line
-	950  5250 1250 5250
+	1300 4900 1000 4900
 Entry Wire Line
-	1250 5250 1350 5150
+	1000 4900 900  5000
 Wire Wire Line
-	950  5350 1250 5350
+	1300 4800 1000 4800
 Entry Wire Line
-	1250 5350 1350 5250
+	1000 4800 900  4900
 Wire Wire Line
-	950  5450 1250 5450
+	1300 4700 1000 4700
 Entry Wire Line
-	1250 5450 1350 5350
+	1000 4700 900  4800
 Entry Wire Line
-	1250 5550 1350 5450
-Text Label 1000 4950 0    50   ~ 0
+	1000 4600 900  4700
+Text Label 1850 4900 0    50   ~ 0
 GPIO6
-Text Label 1000 5050 0    50   ~ 0
+Text Label 1850 5000 0    50   ~ 0
 GPIO5
-Text Label 1000 5150 0    50   ~ 0
+Text Label 1250 5000 2    50   ~ 0
 GPIO4
-Text Label 1000 5250 0    50   ~ 0
+Text Label 1250 4900 2    50   ~ 0
 GPIO3
-Text Label 1000 5350 0    50   ~ 0
+Text Label 1250 4800 2    50   ~ 0
 GPIO2
-Text Label 1000 5450 0    50   ~ 0
+Text Label 1250 4700 2    50   ~ 0
 GPIO1
-Text Label 1000 5550 0    50   ~ 0
+Text Label 1250 4600 2    50   ~ 0
 GPIO0
 Text Label 6000 1300 0    50   ~ 0
 FPGA_SPI_CLK
@@ -454,7 +443,7 @@ L Device:C C39
 U 1 1 615306AA
 P 8800 5100
 F 0 "C39" H 8915 5146 50  0000 L CNN
-F 1 "1u" H 8915 5055 50  0000 L CNN
+F 1 "1uF" H 8915 5055 50  0000 L CNN
 F 2 "" H 8838 4950 50  0001 C CNN
 F 3 "~" H 8800 5100 50  0001 C CNN
 	1    8800 5100
@@ -728,7 +717,7 @@ F 3 "~" H 1300 1300 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	950  5550 1250 5550
+	1300 4600 1000 4600
 Wire Wire Line
 	7800 3450 7800 2400
 $Comp
@@ -800,10 +789,10 @@ Wire Wire Line
 Wire Wire Line
 	1400 6600 1400 6850
 $Comp
-L Connector_Generic:Conn_02x02_Counter_Clockwise J?
+L Connector_Generic:Conn_02x02_Counter_Clockwise J4
 U 1 1 617FA2E9
 P 800 6500
-F 0 "J?" V 804 6312 50  0000 R CNN
+F 0 "J4" V 804 6312 50  0000 R CNN
 F 1 "BACKUP_SPI_OUT" H 1150 6650 50  0000 R CNN
 F 2 "" H 800 6500 50  0001 C CNN
 F 3 "~" H 800 6500 50  0001 C CNN
@@ -819,10 +808,10 @@ BACKUP_SPI_MISO
 Text Label 1450 6400 0    50   ~ 0
 BACKUP_SPI_MOSI
 $Comp
-L Device:LED D?
+L Device:LED D5
 U 1 1 6189B0E4
 P 1350 3450
-F 0 "D?" H 1200 3500 50  0000 C CNN
+F 0 "D5" H 1200 3500 50  0000 C CNN
 F 1 "Status LED 3" H 1350 3300 50  0000 C CNN
 F 2 "" H 1350 3450 50  0001 C CNN
 F 3 "~" H 1350 3450 50  0001 C CNN
@@ -830,10 +819,10 @@ F 3 "~" H 1350 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R34
 U 1 1 6189BBB6
 P 1850 3450
-F 0 "R?" V 1800 3300 50  0000 C CNN
+F 0 "R34" V 1750 3450 50  0000 C CNN
 F 1 "220" V 1850 3450 50  0000 C CNN
 F 2 "" V 1780 3450 50  0001 C CNN
 F 3 "~" H 1850 3450 50  0001 C CNN
@@ -845,10 +834,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 3450 950  3450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0164
 U 1 1 618B3507
 P 950 2400
-F 0 "#PWR?" H 950 2150 50  0001 C CNN
+F 0 "#PWR0164" H 950 2150 50  0001 C CNN
 F 1 "GND" V 955 2272 50  0000 R CNN
 F 2 "" H 950 2400 50  0001 C CNN
 F 3 "" H 950 2400 50  0001 C CNN
@@ -856,10 +845,10 @@ F 3 "" H 950 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D4
 U 1 1 618B492D
 P 1350 3150
-F 0 "D?" H 1200 3200 50  0000 C CNN
+F 0 "D4" H 1200 3200 50  0000 C CNN
 F 1 "Status LED 2" H 1350 3000 50  0000 C CNN
 F 2 "" H 1350 3150 50  0001 C CNN
 F 3 "~" H 1350 3150 50  0001 C CNN
@@ -867,10 +856,10 @@ F 3 "~" H 1350 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R33
 U 1 1 618B4933
 P 1850 3150
-F 0 "R?" V 1800 3000 50  0000 C CNN
+F 0 "R33" V 1750 3150 50  0000 C CNN
 F 1 "220" V 1850 3150 50  0000 C CNN
 F 2 "" V 1780 3150 50  0001 C CNN
 F 3 "~" H 1850 3150 50  0001 C CNN
@@ -882,10 +871,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 3150 950  3150
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 618BB150
 P 1350 2850
-F 0 "D?" H 1200 2900 50  0000 C CNN
+F 0 "D3" H 1200 2900 50  0000 C CNN
 F 1 "Status LED 1" H 1350 2700 50  0000 C CNN
 F 2 "" H 1350 2850 50  0001 C CNN
 F 3 "~" H 1350 2850 50  0001 C CNN
@@ -893,10 +882,10 @@ F 3 "~" H 1350 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R32
 U 1 1 618BB156
 P 1850 2850
-F 0 "R?" V 1800 2700 50  0000 C CNN
+F 0 "R32" V 1750 2850 50  0000 C CNN
 F 1 "220" V 1850 2850 50  0000 C CNN
 F 2 "" V 1780 2850 50  0001 C CNN
 F 3 "~" H 1850 2850 50  0001 C CNN
@@ -908,10 +897,10 @@ Wire Wire Line
 Wire Wire Line
 	1200 2850 950  2850
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 618C9146
 P 1350 2550
-F 0 "D?" H 1200 2600 50  0000 C CNN
+F 0 "D2" H 1200 2600 50  0000 C CNN
 F 1 "Status LED 0" H 1350 2400 50  0000 C CNN
 F 2 "" H 1350 2550 50  0001 C CNN
 F 3 "~" H 1350 2550 50  0001 C CNN
@@ -919,10 +908,10 @@ F 3 "~" H 1350 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R31
 U 1 1 618C914C
 P 1850 2550
-F 0 "R?" V 1800 2400 50  0000 C CNN
+F 0 "R31" V 1750 2550 50  0000 C CNN
 F 1 "220" V 1850 2550 50  0000 C CNN
 F 2 "" V 1780 2550 50  0001 C CNN
 F 3 "~" H 1850 2550 50  0001 C CNN
@@ -970,13 +959,13 @@ Text Notes 600  7100 0    50   ~ 0
 Backup SPI breakout for connecting to an external\nFPGA if the on-board FPGA is fried.\n
 Wire Wire Line
 	4300 2350 4300 2950
-Text Label 1000 4850 0    50   ~ 0
+Text Label 1850 4800 0    50   ~ 0
 GPIO7
-Text Label 1000 4750 0    50   ~ 0
+Text Label 1850 4700 0    50   ~ 0
 GPIO8
-Text Label 1000 4650 0    50   ~ 0
+Text Label 1850 4600 0    50   ~ 0
 GPIO9
-Text Label 2150 4450 0    50   ~ 0
+Text Label 2500 4450 0    50   ~ 0
 GPIO[0..9]
 Wire Wire Line
 	8350 4500 8350 4850
@@ -1077,8 +1066,6 @@ GPIO5
 Text Label 4350 3950 0    50   ~ 0
 GPIO6
 NoConn ~ 4650 4350
-Wire Bus Line
-	1350 4450 4150 4450
 Wire Notes Line
 	550  2150 550  3800
 Wire Notes Line
@@ -1131,14 +1118,31 @@ Text Notes 4450 650  0    50   ~ 10
 FPGA SPI
 Text Notes 4450 850  0    50   ~ 0
 For communication with the FPGA, primarily telling the FPGA what\nsounds to produce.
-Wire Bus Line
-	5250 950  5250 1650
-Wire Bus Line
-	4150 3450 4150 4450
-Wire Bus Line
-	1350 4450 1350 5450
 Text Notes 600  5950 0    50   ~ 10
 Backup SPI
 Text Notes 3950 6850 0    50   ~ 10
 Decoupling capacitors (see AN0002.1, page 13)
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise J6
+U 1 1 6149651E
+P 1500 4800
+F 0 "J6" H 1550 5217 50  0000 C CNN
+F 1 "MCU_GPIO" H 1550 5126 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	900  5150 2200 5150
+Wire Bus Line
+	2200 4450 4150 4450
+Wire Bus Line
+	5250 950  5250 1650
+Wire Bus Line
+	2200 4450 2200 5150
+Wire Bus Line
+	900  4700 900  5150
+Wire Bus Line
+	4150 3450 4150 4450
 $EndSCHEMATC

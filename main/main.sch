@@ -291,5 +291,7 @@ F0 "FPGA" 50
 F1 "FPGA.sch" 50
 F2 "I2S[0..2]" O R 6150 3350 50 
 F3 "MCU_SPI[0..3]" B L 4350 3350 50 
+F4 "done" O L 4350 3850 50 
+F5 "program_b" I L 4350 3950 50 
 $EndSheet
 $EndSCHEMATC
