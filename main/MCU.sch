@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title "MIDI Audio Box"
 Date "2021-09-21"
 Rev "v01"
@@ -449,22 +449,6 @@ F 3 "~" H 8800 5100 50  0001 C CNN
 	1    8800 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8650 4950 8800 4950
-Connection ~ 8650 4950
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 6152DFA6
-P 8650 4950
-F 0 "#FLG0101" H 8650 5025 50  0001 C CNN
-F 1 "PWR_FLAG" H 8650 5123 50  0000 C CNN
-F 2 "" H 8650 4950 50  0001 C CNN
-F 3 "~" H 8650 4950 50  0001 C CNN
-	1    8650 4950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 4950 8650 4950
 $Comp
 L Device:C C32
 U 1 1 61582135
@@ -506,12 +490,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0142
 U 1 1 6158214A
-P 3300 7150
-F 0 "#PWR0142" H 3300 7000 50  0001 C CNN
-F 1 "+3.3V" H 3315 7323 50  0000 C CNN
-F 2 "" H 3300 7150 50  0001 C CNN
-F 3 "" H 3300 7150 50  0001 C CNN
-	1    3300 7150
+P 3250 7150
+F 0 "#PWR0142" H 3250 7000 50  0001 C CNN
+F 1 "+3.3V" H 3265 7323 50  0000 C CNN
+F 2 "" H 3250 7150 50  0001 C CNN
+F 3 "" H 3250 7150 50  0001 C CNN
+	1    3250 7150
 	1    0    0    -1  
 $EndComp
 Connection ~ 3300 7150
@@ -734,16 +718,10 @@ $EndComp
 NoConn ~ 4650 3050
 NoConn ~ 4650 4550
 NoConn ~ 4650 4650
-NoConn ~ 6650 5650
-NoConn ~ 6650 5450
 NoConn ~ 6650 5250
-NoConn ~ 6650 4550
-NoConn ~ 6650 4250
 NoConn ~ 6650 4150
 NoConn ~ 6650 3650
 NoConn ~ 6650 3550
-NoConn ~ 6650 3250
-NoConn ~ 6650 3150
 NoConn ~ 6650 2650
 NoConn ~ 6650 2550
 Wire Wire Line
@@ -758,7 +736,6 @@ Wire Wire Line
 	4650 5250 4150 5250
 Wire Wire Line
 	4150 5250 4150 6400
-NoConn ~ 6650 5550
 Wire Wire Line
 	4650 5150 4050 5150
 Wire Wire Line
@@ -1096,14 +1073,14 @@ Wire Notes Line
 Text Notes 8950 750  0    50   ~ 10
 Debug Interface
 Wire Notes Line
-	9350 4100 9350 4750
+	9350 4000 9350 4750
 Wire Notes Line
 	9350 4750 10800 4750
 Wire Notes Line
-	9350 4100 10800 4100
+	9350 4000 10800 4000
 Wire Notes Line
-	10800 4100 10800 4750
-Text Notes 9400 4200 0    50   ~ 10
+	10800 4000 10800 4750
+Text Notes 9400 3950 0    50   ~ 10
 Fallback Input Keys
 Wire Notes Line
 	4400 550  4400 1900
@@ -1142,6 +1119,48 @@ Wire Wire Line
 	4550 5650 4550 6100
 Wire Wire Line
 	4550 6100 5250 6100
+Text HLabel 5250 6100 2    50   Output ~ 0
+external_clock_out
+Text HLabel 6900 3150 2    50   Input ~ 0
+FPGA_done
+Wire Wire Line
+	6650 3150 6900 3150
+Text HLabel 6900 3250 2    50   Output ~ 0
+FPGA_program_b
+Wire Wire Line
+	6650 3250 6900 3250
+Text HLabel 6950 5450 2    50   Output ~ 0
+DAC_MODE_CTRL_CLK
+Text HLabel 6950 5550 2    50   Output ~ 0
+DAC_MODE_DATA
+Text HLabel 6950 5650 2    50   Output ~ 0
+DAC_MODE_LATCH
+Wire Wire Line
+	6950 5450 6650 5450
+Wire Wire Line
+	6950 5550 6650 5550
+Wire Wire Line
+	6650 5650 6950 5650
+Wire Wire Line
+	3250 7150 3300 7150
+Wire Wire Line
+	6650 4950 8800 4950
+Wire Wire Line
+	8050 4550 8050 4200
+Wire Wire Line
+	8050 4200 9700 4200
+Text HLabel 9700 4200 2    50   Input ~ 0
+FBKey3
+Text HLabel 9700 4100 2    50   Input ~ 0
+FBKey4
+Wire Wire Line
+	6650 4250 7950 4250
+Wire Wire Line
+	7950 4250 7950 4100
+Wire Wire Line
+	7950 4100 9700 4100
+Wire Wire Line
+	6650 4550 8050 4550
 Wire Bus Line
 	5250 950  5250 1650
 Wire Bus Line
@@ -1150,6 +1169,5 @@ Wire Bus Line
 	900  4700 900  5150
 Wire Bus Line
 	4150 3450 4150 4450
-Text HLabel 5250 6100 2    50   Output ~ 0
-external_clock_out
+Connection ~ 1500 1100
 $EndSCHEMATC

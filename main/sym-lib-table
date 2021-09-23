@@ -4,4 +4,5 @@
   (lib (name EFM32GG12B810F1024Q64)(type Legacy)(uri ${KIPRJMOD}/EFM32GG12B810F1024Q64.lib)(options "")(descr ""))
   (lib (name TPA6110A2DGN)(type Legacy)(uri ${KIPRJMOD}/TPA6110A2DGN.lib)(options "")(descr ""))
   (lib (name TPS54294PWP)(type Legacy)(uri ${KIPRJMOD}/TPS54294PWP.lib)(options "")(descr ""))
+  (lib (name ESP-PSRAM64H)(type Legacy)(uri ${KIPRJMOD}/ESP-PSRAM64H.lib)(options "")(descr ""))
 )

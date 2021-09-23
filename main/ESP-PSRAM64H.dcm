@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ESP-PSRAM64H
+D ESP-PSRAM64 and ESP-PSRAM64H 64 Mbit serial pseudo SRAM
+K
+F https://www.espressif.com/sites/default/files/documentation/esp-psram64_esp-psram64h_datasheet_en.pdf
+$ENDCMP
+#
+#End Doc Library
