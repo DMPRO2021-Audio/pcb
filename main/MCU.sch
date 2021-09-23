@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title ""
-Date ""
-Rev ""
+Title "MIDI Audio Box"
+Date "2021-09-21"
+Rev "v01"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Authors: Iver Håkonsen, Halvor Bjørstad"
+Comment4 "TDT4295 Computer Design Project"
 $EndDescr
 Text HLabel 4300 2350 1    50   Input ~ 0
 MIDI_IN
@@ -759,7 +759,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 5250 4150 6400
 NoConn ~ 6650 5550
-NoConn ~ 4650 5650
 Wire Wire Line
 	4650 5150 4050 5150
 Wire Wire Line
@@ -1137,6 +1136,12 @@ Wire Bus Line
 	900  5150 2200 5150
 Wire Bus Line
 	2200 4450 4150 4450
+Wire Wire Line
+	4650 5650 4550 5650
+Wire Wire Line
+	4550 5650 4550 6100
+Wire Wire Line
+	4550 6100 5250 6100
 Wire Bus Line
 	5250 950  5250 1650
 Wire Bus Line
@@ -1145,4 +1150,6 @@ Wire Bus Line
 	900  4700 900  5150
 Wire Bus Line
 	4150 3450 4150 4450
+Text HLabel 5250 6100 2    50   Output ~ 0
+external_clock_out
 $EndSCHEMATC

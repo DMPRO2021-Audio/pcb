@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 7
-Title "Synthesizer"
-Date "2021-09-06"
+Title "MIDI Audio Box"
+Date "2021-09-21"
 Rev "v01"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
+Comment3 "Authors: Iver Håkonsen, Halvor Bjørstad"
 Comment4 "TDT4295 Computer Design Project"
 $EndDescr
 $Sheet
@@ -30,6 +30,7 @@ F3 "FPGA_SPI[0..3]" B R 3850 3350 50
 F4 "FBKey0" I L 1950 3750 50 
 F5 "FBKey1" I L 1950 3850 50 
 F6 "FBKey2" I L 1950 3950 50 
+F7 "external_clock_out" O R 3850 3700 50 
 $EndSheet
 Wire Wire Line
 	1750 2700 1950 2700

@@ -4,33 +4,15 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 7 7
-Title "Audio project FPGA connections"
-Date ""
-Rev "V01"
+Title "MIDI Audio Box"
+Date "2021-09-21"
+Rev "v01"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 "Authors: Halvor Bjørstad, Iver Håkonsen"
+Comment3 "Authors: Iver Håkonsen, Halvor Bjørstad"
+Comment4 "TDT4295 Computer Design Project"
 $EndDescr
-Entry Wire Line
-	7600 9150 7700 9250
-Entry Wire Line
-	7600 9000 7700 9100
-Entry Wire Line
-	7600 8850 7700 8950
-Entry Wire Line
-	7600 8700 7700 8800
-Text Label 7600 8500 0    50   ~ 0
-MCU_SPI[0..3]
-Text Label 7700 8800 0    50   ~ 0
-MCU_SPI0
-Text Label 7700 8950 0    50   ~ 0
-MCU_SPI1
-Text Label 7700 9100 0    50   ~ 0
-MCU_SPI2
-Text Label 7700 9250 0    50   ~ 0
-MCU_SPI3
 Entry Wire Line
 	11100 3150 11200 3050
 Entry Wire Line
@@ -49,10 +31,6 @@ Wire Bus Line
 	11100 3950 10950 3950
 Text HLabel 10950 3950 0    50   Output ~ 0
 I2S[0..2]
-Wire Bus Line
-	7600 8450 7450 8450
-Text HLabel 7450 8450 0    50   BiDi ~ 0
-MCU_SPI[0..3]
 Wire Wire Line
 	5300 6000 5300 6100
 Wire Wire Line
@@ -1552,14 +1530,6 @@ NoConn ~ 15900 1950
 NoConn ~ 15900 1850
 NoConn ~ 15900 1750
 NoConn ~ 15900 2050
-Text Label 8350 8800 0    50   ~ 0
-MCU_SPI_CLK
-Text Label 8350 8950 0    50   ~ 0
-MCU_SPI_MOSI
-Text Label 8350 9100 0    50   ~ 0
-MCU_SPI_MISO
-Text Label 8350 9250 0    50   ~ 0
-MSU_SPI_CS
 Wire Wire Line
 	13100 7500 12800 7500
 Entry Wire Line
@@ -1699,27 +1669,11 @@ Wire Wire Line
 Wire Wire Line
 	11900 4350 9300 4350
 Wire Wire Line
-	9300 4350 9300 8800
-Wire Wire Line
-	7700 8800 9300 8800
-Wire Wire Line
 	11900 4950 9450 4950
-Wire Wire Line
-	9450 4950 9450 8950
-Wire Wire Line
-	7700 8950 9450 8950
-Wire Wire Line
-	9600 9100 9600 5050
 Wire Wire Line
 	9600 5050 11900 5050
 Wire Wire Line
-	7700 9100 9600 9100
-Wire Wire Line
 	11900 5150 9750 5150
-Wire Wire Line
-	9750 5150 9750 9250
-Wire Wire Line
-	7700 9250 9750 9250
 Wire Wire Line
 	11200 3050 11900 3050
 Wire Wire Line
@@ -1788,10 +1742,56 @@ Text Label 11450 5750 0    50   ~ 0
 GPIO8
 Text Label 11450 5650 0    50   ~ 0
 GPIO9
+Wire Wire Line
+	7700 9900 9750 9900
+Wire Wire Line
+	7700 9750 9600 9750
+Wire Wire Line
+	7700 9600 9450 9600
+Wire Wire Line
+	7700 9450 9300 9450
+Text Label 8350 9900 0    50   ~ 0
+MSU_SPI_CS
+Text Label 8350 9750 0    50   ~ 0
+MCU_SPI_MISO
+Text Label 8350 9600 0    50   ~ 0
+MCU_SPI_MOSI
+Text Label 8350 9450 0    50   ~ 0
+MCU_SPI_CLK
+Text HLabel 7450 9100 0    50   BiDi ~ 0
+MCU_SPI[0..3]
+Wire Bus Line
+	7600 9100 7450 9100
+Text Label 7700 9900 0    50   ~ 0
+MCU_SPI3
+Text Label 7700 9750 0    50   ~ 0
+MCU_SPI2
+Text Label 7700 9600 0    50   ~ 0
+MCU_SPI1
+Text Label 7700 9450 0    50   ~ 0
+MCU_SPI0
+Text Label 7600 9150 0    50   ~ 0
+MCU_SPI[0..3]
+Entry Wire Line
+	7600 9350 7700 9450
+Entry Wire Line
+	7600 9500 7700 9600
+Entry Wire Line
+	7600 9650 7700 9750
+Entry Wire Line
+	7600 9800 7700 9900
+Wire Wire Line
+	9300 4350 9300 9450
+Wire Wire Line
+	9450 4950 9450 9600
+Wire Wire Line
+	9600 5050 9600 9750
+Wire Wire Line
+	9750 5150 9750 9900
 Wire Bus Line
 	11100 3150 11100 3950
 Wire Bus Line
-	7600 8450 7600 9150
+	7600 9100 7600 9800
 Wire Bus Line
 	12700 7350 12700 8050
 Wire Bus Line

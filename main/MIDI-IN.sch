@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
-Title ""
-Date ""
-Rev ""
+Title "MIDI Audio Box"
+Date "2021-09-21"
+Rev "v01"
 Comp ""
 Comment1 ""
 Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment3 "Authors: Iver Håkonsen, Halvor Bjørstad"
+Comment4 "TDT4295 Computer Design Project"
 $EndDescr
 NoConn ~ 4100 4000
 NoConn ~ 4700 4000
