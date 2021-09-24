@@ -1579,28 +1579,10 @@ Wire Wire Line
 	9800 4050 11900 4050
 Text HLabel 9800 3450 0    50   Output ~ 0
 DAC_SYS_CLK
-Text HLabel 13050 8250 2    50   Input ~ 0
-DAC_ZERO_L
-Text HLabel 13050 8350 2    50   Input ~ 0
-DAC_ZERO_R
-Text HLabel 13050 8450 2    50   Output ~ 0
-AMPLIFIER_SHUTDOWN
-Wire Wire Line
-	11100 8450 13050 8450
 Wire Wire Line
 	10400 3350 10400 3450
 Wire Wire Line
 	10400 3450 9800 3450
-Text Notes 12750 8850 0    50   ~ 0
-Turn of the amplifier if both\nchannels of the DAC are zero,\ni.e., AMPLIFIER_SHUTDOWN = \nDAC_ZERO_L && DAC_ZERO_R
-Wire Notes Line
-	12700 8200 13950 8200
-Wire Notes Line
-	13950 8200 13950 9050
-Wire Notes Line
-	13950 9050 12700 9050
-Wire Notes Line
-	12700 8200 12700 9050
 Wire Wire Line
 	11550 6550 11900 6550
 Wire Wire Line
@@ -1672,22 +1654,6 @@ F 11 "" H 11100 9600 50  0001 L CNN "Arrow Price/Stock"
 $EndComp
 Wire Wire Line
 	9700 5600 11000 5600
-Wire Wire Line
-	11300 8250 11300 5450
-Wire Wire Line
-	11300 5450 11900 5450
-Wire Wire Line
-	11300 8250 13050 8250
-Wire Wire Line
-	11200 8350 11200 5350
-Wire Wire Line
-	11200 5350 11900 5350
-Wire Wire Line
-	11200 8350 13050 8350
-Wire Wire Line
-	11100 8450 11100 5250
-Wire Wire Line
-	11100 5250 11900 5250
 Wire Wire Line
 	9550 10400 9550 10050
 Wire Wire Line
@@ -2073,6 +2039,9 @@ Connection ~ 3900 9150
 Connection ~ 3900 9450
 Text Notes 3800 9800 0    50   ~ 0
 One I/O Bank (14): 1 x 47uF or 100uF, 2 x 4.7 uF, 4 x 470nF
+NoConn ~ 11900 5450
+NoConn ~ 11900 5350
+NoConn ~ 11900 5250
 Wire Bus Line
 	10250 3150 10250 3350
 Wire Bus Line

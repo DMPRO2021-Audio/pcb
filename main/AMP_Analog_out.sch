@@ -28,8 +28,6 @@ Text HLabel 2350 4150 0    50   Input ~ 0
 IN_L
 Text HLabel 2350 3700 0    50   Input ~ 0
 IN_R
-Text HLabel 5400 3850 0    50   Input ~ 0
-SHUTDOWN
 $Comp
 L power:+3.3VA #PWR010
 U 1 1 6144EAAF
@@ -272,4 +270,19 @@ F 3 "" H 6400 3300 50  0001 C CNN
 	1    6400 3300
 	-1   0    0    1   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C66B7F
+P 5200 3600
+F 0 "#PWR?" H 5200 3350 50  0001 C CNN
+F 1 "GND" H 5205 3427 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 3600 5200 3850
+Wire Wire Line
+	5200 3850 5400 3850
 $EndSCHEMATC

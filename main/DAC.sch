@@ -411,16 +411,10 @@ F 11 "https://www.arrow.com/en/products/pcm1741e/texas-instruments" H 6400 2850 
 	1    5050 3650
 	1    0    0    -1  
 $EndComp
-Text HLabel 6800 4050 2    50   Output ~ 0
-DAC_ZERO_L
-Wire Wire Line
-	6800 4050 6550 4050
-Wire Wire Line
-	6550 4150 6800 4150
-Text HLabel 6800 4150 2    50   Output ~ 0
-DAC_ZERO_R
 Wire Wire Line
 	3050 2200 3050 2350
+NoConn ~ 6550 4050
+NoConn ~ 6550 4150
 Wire Bus Line
 	2500 2100 3550 2100
 $EndSCHEMATC
