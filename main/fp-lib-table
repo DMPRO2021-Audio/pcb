@@ -2,4 +2,6 @@
   (lib (name DAC)(type KiCad)(uri ${KIPRJMOD}/DAC.pretty)(options "")(descr ""))
   (lib (name EFM32GG12B810F1024Q64)(type KiCad)(uri ${KIPRJMOD}/EFM32GG12B810F1024Q64.pretty)(options "")(descr ""))
   (lib (name TPS54294PWP)(type KiCad)(uri ${KIPRJMOD}/TPS54294PWP.pretty)(options "")(descr ""))
+  (lib (name ESP-PSRAM64H)(type KiCad)(uri ${KIPRJMOD}/ESP-PSRAM64H.pretty)(options "")(descr ""))
+  (lib (name 671-0501)(type KiCad)(uri ${KIPRJMOD}/671-0501.pretty)(options "")(descr ""))
 )
