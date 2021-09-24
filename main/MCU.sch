@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title "MIDI Audio Box"
 Date "2021-09-21"
 Rev "v01"
@@ -951,19 +951,8 @@ Text Notes 600  5950 0    50   ~ 10
 Backup SPI
 Text Notes 3950 6850 0    50   ~ 10
 Decoupling capacitors (see AN0002.1, page 13)
-$Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise J11
-U 1 1 6149651E
-P 1500 4800
-F 0 "J11" H 1550 5217 50  0000 C CNN
-F 1 "MCU_GPIO" H 1550 5126 50  0000 C CNN
-F 2 "" H 1500 4800 50  0001 C CNN
-F 3 "~" H 1500 4800 50  0001 C CNN
-	1    1500 4800
-	1    0    0    -1  
-$EndComp
 Wire Bus Line
-	900  5150 2200 5150
+	900  5700 2200 5700
 Wire Bus Line
 	2200 4450 4150 4450
 Wire Wire Line
@@ -1019,7 +1008,7 @@ L Connector_Generic:Conn_02x04_Odd_Even J12
 U 1 1 61563CCF
 P 1100 6500
 F 0 "J12" H 1150 6075 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 1150 6166 50  0000 C CNN
+F 1 "BACKUP_SPI" H 1150 6166 50  0000 C CNN
 F 2 "" H 1100 6500 50  0001 C CNN
 F 3 "~" H 1100 6500 50  0001 C CNN
 	1    1100 6500
@@ -1151,12 +1140,53 @@ Used as an external clock so the EFM32GG can run at full\nspeed.
 Text Notes 600  700  0    50   ~ 10
 High Frequency Oscillator
 NoConn ~ 4650 4950
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J5
+U 1 1 61CACD05
+P 1500 4800
+F 0 "J5" H 1550 5217 50  0000 C CNN
+F 1 "MCU_GPIO" H 1550 5126 50  0000 C CNN
+F 2 "" H 1500 4800 50  0001 C CNN
+F 3 "~" H 1500 4800 50  0001 C CNN
+	1    1500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR076
+U 1 1 61CC3716
+P 1200 5250
+F 0 "#PWR076" H 1200 5100 50  0001 C CNN
+F 1 "+3.3V" H 1215 5423 50  0000 C CNN
+F 2 "" H 1200 5250 50  0001 C CNN
+F 3 "" H 1200 5250 50  0001 C CNN
+	1    1200 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 5250 1200 5100
+Wire Wire Line
+	1200 5100 1300 5100
+$Comp
+L power:GND #PWR077
+U 1 1 61CCF946
+P 1950 5300
+F 0 "#PWR077" H 1950 5050 50  0001 C CNN
+F 1 "GND" H 1955 5127 50  0000 C CNN
+F 2 "" H 1950 5300 50  0001 C CNN
+F 3 "" H 1950 5300 50  0001 C CNN
+	1    1950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 5300 1950 5100
+Wire Wire Line
+	1950 5100 1800 5100
 Wire Bus Line
 	5250 950  5250 1650
 Wire Bus Line
-	2200 4450 2200 5150
+	2200 4450 2200 5700
 Wire Bus Line
-	900  4700 900  5150
+	900  4700 900  5700
 Wire Bus Line
 	4150 3450 4150 4450
 $EndSCHEMATC
