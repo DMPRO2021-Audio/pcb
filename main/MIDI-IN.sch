@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 6
 Title "MIDI Audio Box"
 Date "2021-09-21"
 Rev "v01"
@@ -68,7 +68,7 @@ U 1 1 61403627
 P 6350 4650
 F 0 "U1" H 6350 5117 50  0000 C CNN
 F 1 "6N138" H 6350 5026 50  0000 C CNN
-F 2 "" H 6640 4350 50  0001 C CNN
+F 2 "6N138SMT_R:SOP254P1030X460-8N" H 6640 4350 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 6640 4350 50  0001 C CNN
 	1    6350 4650
 	1    0    0    -1  
