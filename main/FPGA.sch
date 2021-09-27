@@ -233,7 +233,9 @@ P 1950 9500
 F 0 "U3" H 1950 11067 50  0000 C CNN
 F 1 "XC7A100T-FTG256" H 1950 10976 50  0000 C CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 1950 9500 50  0001 C CNN
-F 3 "" H 1950 9500 50  0000 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 1950 9500 50  0000 C CNN
+F 4 "Xilinx" H 1950 9500 50  0001 C CNN "Manufacturer_Name"
+F 5 "XC7A100T-FTG256" H 1950 9500 50  0001 C CNN "Manufacturer_Part_Number"
 	4    1950 9500
 	1    0    0    -1  
 $EndComp
@@ -303,7 +305,9 @@ P 7450 5400
 F 0 "U3" H 8700 3700 50  0000 R CNN
 F 1 "XC7A100T-FTG256" H 6900 6850 50  0000 R CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 7450 5400 50  0001 C CNN
-F 3 "" H 7450 5400 50  0000 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 7450 5400 50  0000 C CNN
+F 4 "Xilinx" H 7450 5400 50  0001 C CNN "Manufacturer_Name"
+F 5 "XC7A100T-FTG256" H 7450 5400 50  0001 C CNN "Manufacturer_Part_Number"
 	3    7450 5400
 	-1   0    0    1   
 $EndComp
@@ -645,7 +649,7 @@ U 1 1 61606670
 P 1350 7500
 F 0 "C20" H 1400 7600 50  0000 L CNN
 F 1 "330uF" H 1400 7400 50  0000 L CNN
-F 2 "" H 1350 7500 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-7343-43_Kemet-X_Pad2.25x2.55mm_HandSolder" H 1350 7500 50  0001 C CNN
 F 3 "~" H 1350 7500 50  0001 C CNN
 	1    1350 7500
 	1    0    0    -1  
@@ -920,6 +924,10 @@ F 0 "U2" H 4700 3600 50  0000 C CNN
 F 1 "S25FL127S" H 4700 2850 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.275x5.275mm_P1.27mm" H 4250 3250 50  0001 C CNN
 F 3 "https://www.farnell.com/datasheets/2330438.pdf" H 4250 3250 50  0001 C CNN
+F 4 "Flash for the FPGA" H 4700 3200 50  0001 C CNN "Description"
+F 5 "Cypress" H 4700 3200 50  0001 C CNN "Manufacturer_Name"
+F 6 "S25FL127SABMFV101" H 4700 3200 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://no.farnell.com/cypress-semiconductor/s25fl127sabmfv101/flash-memory-128mbit-108mhz-soic/dp/2772749?st=s25fl127s" H 4700 3200 50  0001 C CNN "URL"
 	1    4700 3200
 	1    0    0    -1  
 $EndComp
@@ -1616,15 +1624,16 @@ P 9650 10400
 F 0 "IC3" H 10400 9850 50  0000 C CNN
 F 1 "ESP-PSRAM64H" H 10450 9950 50  0000 C CNN
 F 2 "ESP-PSRAM64H:SOIC127P600X175-8N" H 11100 10500 50  0001 L CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp-psram64_esp-psram64h_datasheet_en.pdf" H 11100 10400 50  0001 L CNN
+F 3 "https://cdn-shop.adafruit.com/product-files/4677/4677_esp-psram64_esp-psram64h_datasheet_en.pdf" H 11100 10400 50  0001 L CNN
 F 4 "ESP-PSRAM64 and ESP-PSRAM64H 64 Mbit serial pseudo SRAM" H 11100 10300 50  0001 L CNN "Description"
 F 5 "1.75" H 11100 10200 50  0001 L CNN "Height"
-F 6 "Espressif Systems" H 11100 10100 50  0001 L CNN "Manufacturer_Name"
-F 7 "ESP-PSRAM64H" H 11100 10000 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "Adafruit Industries" H 11100 10100 50  0001 L CNN "Manufacturer_Name"
+F 7 "4677" H 11100 10000 50  0001 L CNN "Manufacturer_Part_Number"
 F 8 "" H 11100 9900 50  0001 L CNN "Mouser Part Number"
 F 9 "" H 11100 9800 50  0001 L CNN "Mouser Price/Stock"
 F 10 "" H 11100 9700 50  0001 L CNN "Arrow Part Number"
 F 11 "" H 11100 9600 50  0001 L CNN "Arrow Price/Stock"
+F 12 "https://www.digikey.com/en/products/detail/adafruit-industries-llc/4677/13148775" H 9650 10400 50  0001 C CNN "URL"
 	1    9650 10400
 	1    0    0    -1  
 $EndComp
@@ -1731,7 +1740,9 @@ P 13900 3850
 F 0 "U3" H 13900 6550 50  0000 C CNN
 F 1 "XC7A100T-FTG256" H 13900 900 50  0000 C CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 13900 3850 50  0001 C CNN
-F 3 "" H 13900 3850 50  0000 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 13900 3850 50  0000 C CNN
+F 4 "Xilinx" H 13900 3850 50  0001 C CNN "Manufacturer_Name"
+F 5 "XC7A100T-FTG256" H 13900 3850 50  0001 C CNN "Manufacturer_Part_Number"
 	1    13900 3850
 	1    0    0    -1  
 $EndComp
@@ -2014,7 +2025,10 @@ P 13400 7700
 F 0 "J5" H 13450 8117 50  0000 C CNN
 F 1 "FPGA_GPIO" H 13450 8026 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 13400 7700 50  0001 C CNN
-F 3 "~" H 13400 7700 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/3029611.pdf" H 13400 7700 50  0001 C CNN
+F 4 "Multicomp PRO" H 13400 7700 50  0001 C CNN "Manufacturer_Name"
+F 5 "2213S-50G" H 13400 7700 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/multicomp/2213s-50g/connector-header-50pos-2-54mm/dp/2847228" H 13400 7700 50  0001 C CNN "URL"
 	1    13400 7700
 	-1   0    0    -1  
 $EndComp
@@ -2095,7 +2109,9 @@ P 18800 3800
 F 0 "U3" H 18800 825 50  0000 C CNN
 F 1 "XC7A100T-FTG256" H 18800 734 50  0000 C CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 18800 3800 50  0001 C CNN
-F 3 "" H 18800 3800 50  0000 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 18800 3800 50  0000 C CNN
+F 4 "Xilinx" H 18800 3800 50  0001 C CNN "Manufacturer_Name"
+F 5 "XC7A100T-FTG256" H 18800 3800 50  0001 C CNN "Manufacturer_Part_Number"
 	2    18800 3800
 	1    0    0    -1  
 $EndComp
@@ -2232,8 +2248,9 @@ U 1 1 6259D044
 P 8500 7950
 F 0 "X1" H 8844 7996 50  0000 L CNN
 F 1 "FGPA_Oscillator" H 8844 7905 50  0000 L CNN
-F 2 "" H 9200 7600 50  0001 C CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm_HandSoldering" H 9200 7600 50  0001 C CNN
 F 3 "http://www.txccorp.com/download/products/osc/7C_o.pdf" H 8400 7950 50  0001 C CNN
+F 4 "" H 8500 7950 50  0001 C CNN "URL"
 	1    8500 7950
 	1    0    0    -1  
 $EndComp

@@ -29,6 +29,7 @@ F 8 "595-TPS54294PWP" H 5900 4400 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS54294PWP?qs=bhx7MkwkKU%252Bmb73RG3GMdQ%3D%3D" H 5900 4300 50  0001 L CNN "Mouser Price/Stock"
 F 10 "TPS54294PWP" H 5900 4200 50  0001 L CNN "Arrow Part Number"
 F 11 "https://www.arrow.com/en/products/tps54294pwp/texas-instruments" H 5900 4100 50  0001 L CNN "Arrow Price/Stock"
+F 12 "https://no.farnell.com/texas-instruments/tps54294pwp/buck-sync-adj-2a-dl-16htssop/dp/3008251" H 4850 4900 50  0001 C CNN "URL"
 	1    4850 4900
 	1    0    0    -1  
 $EndComp
@@ -249,7 +250,10 @@ P 3300 5200
 F 0 "L2" V 3250 5300 50  0000 C CNN
 F 1 "1.5uH" V 3250 5100 50  0000 C CNN
 F 2 "Inductor_SMD:L_1806_4516Metric_Pad1.57x1.80mm_HandSolder" H 3300 5200 50  0001 C CNN
-F 3 "~" H 3300 5200 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/2021974.pdf" H 3300 5200 50  0001 C CNN
+F 4 "muRata" H 3300 5200 50  0001 C CNN "Manufacturer_Name"
+F 5 "1286AS-H-2R2M=P2" H 3300 5200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/murata/1286as-h-2r2m-p2/inductor-2-2uh-20-1-5a-shld-0806/dp/2530046?st=inductor%20smd%200806" H 3300 5200 50  0001 C CNN "URL"
 	1    3300 5200
 	0    -1   -1   0   
 $EndComp
@@ -352,7 +356,10 @@ P 7600 5200
 F 0 "L3" V 7550 5300 50  0000 C CNN
 F 1 "2.2uH" V 7550 5100 50  0000 C CNN
 F 2 "Inductor_SMD:L_1806_4516Metric_Pad1.57x1.80mm_HandSolder" H 7600 5200 50  0001 C CNN
-F 3 "~" H 7600 5200 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/2339713.pdf" H 7600 5200 50  0001 C CNN
+F 4 "muRata" H 7600 5200 50  0001 C CNN "Manufacturer_Name"
+F 5 "DFE201610E-1R5M=P2" H 7600 5200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/murata/dfe201610e-1r5m-p2/inductor-1-5uh-2-4a-0806-shielded/dp/2776797?st=inductor%20smd%200806" H 7600 5200 50  0001 C CNN "URL"
 	1    7600 5200
 	0    -1   -1   0   
 $EndComp
@@ -460,7 +467,10 @@ P 9900 5200
 F 0 "FB1" V 9626 5200 50  0000 C CNN
 F 1 "Ferrite_Bead" V 9717 5200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9830 5200 50  0001 C CNN
-F 3 "~" H 9900 5200 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/38013.pdf" H 9900 5200 50  0001 C CNN
+F 4 "TE" H 9900 5200 50  0001 C CNN "Manufacturer_Name"
+F 5 "BMB2A0060LN2" H 9900 5200 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/sigmainductors-te-connectivity/bmb2a0060ln2/ferrite-bead-0-05ohm-850ma-0805/dp/1193419?st=ferrite%20bead%200805" H 9900 5200 50  0001 C CNN "URL"
 	1    9900 5200
 	0    1    1    0   
 $EndComp
@@ -515,6 +525,7 @@ F 8 "595-TPS54294PWP" H 5900 1100 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS54294PWP?qs=bhx7MkwkKU%252Bmb73RG3GMdQ%3D%3D" H 5900 1000 50  0001 L CNN "Mouser Price/Stock"
 F 10 "TPS54294PWP" H 5900 900 50  0001 L CNN "Arrow Part Number"
 F 11 "https://www.arrow.com/en/products/tps54294pwp/texas-instruments" H 5900 800 50  0001 L CNN "Arrow Price/Stock"
+F 12 "https://no.farnell.com/texas-instruments/tps54294pwp/buck-sync-adj-2a-dl-16htssop/dp/3008251" H 4850 1600 50  0001 C CNN "URL"
 	1    4850 1600
 	1    0    0    -1  
 $EndComp
@@ -660,7 +671,10 @@ P 7600 1900
 F 0 "L1" V 7550 2000 50  0000 C CNN
 F 1 "1.5uH" V 7550 1800 50  0000 C CNN
 F 2 "Inductor_SMD:L_1806_4516Metric_Pad1.57x1.80mm_HandSolder" H 7600 1900 50  0001 C CNN
-F 3 "~" H 7600 1900 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/2021974.pdf" H 7600 1900 50  0001 C CNN
+F 4 "muRata" H 7600 1900 50  0001 C CNN "Manufacturer_Name"
+F 5 "1286AS-H-2R2M=P2" H 7600 1900 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/murata/1286as-h-2r2m-p2/inductor-2-2uh-20-1-5a-shld-0806/dp/2530046?st=inductor%20smd%200806" H 7600 1900 50  0001 C CNN "URL"
 	1    7600 1900
 	0    -1   -1   0   
 $EndComp
@@ -820,7 +834,10 @@ P 9150 4550
 F 0 "D2" V 9097 4630 50  0000 L CNN
 F 1 "Power LED" V 9188 4630 50  0000 L CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9150 4550 50  0001 C CNN
-F 3 "~" H 9150 4550 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/1911350.pdf" H 9150 4550 50  0001 C CNN
+F 4 "Wurth Electronic" H 9150 4550 50  0001 C CNN "Manufacturer_Name"
+F 5 "150080RS75000" H 9150 4550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/wurth-elektronik/150080rs75000/led-0805-red-150mcd-625nm/dp/2322077?st=0805%20led" H 9150 4550 50  0001 C CNN "URL"
 	1    9150 4550
 	0    1    1    0   
 $EndComp
@@ -1046,7 +1063,10 @@ P 900 1400
 F 0 "J3" H 957 1717 50  0000 C CNN
 F 1 "Barrel_Jack_Switch_Pin3Ring" H 957 1626 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 950 1360 50  0001 C CNN
-F 3 "~" H 950 1360 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/digikeypdf/pj-002a.pdf~" H 950 1360 50  0001 C CNN
+F 4 "CUI Devices" H 900 1400 50  0001 C CNN "Manufacturer_Name"
+F 5 " PJ-002A " H 900 1400 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/no/cui-devices/PJ-002A/CP-002A-ND/96962" H 900 1400 50  0001 C CNN "URL"
 	1    900  1400
 	1    0    0    -1  
 $EndComp

@@ -36,8 +36,11 @@ U 1 1 61403616
 P 5650 4600
 F 0 "D1" V 5604 4680 50  0000 L CNN
 F 1 "1N4148" V 5695 4680 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5650 4425 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 5650 4425 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5650 4600 50  0001 C CNN
+F 4 "Taiwan Semiconductor" H 5650 4600 50  0001 C CNN "Manufacturer_Name"
+F 5 "1N4148W RH" H 5650 4600 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/taiwan-semiconductor/1n4148w-rh/diode-small-sig-300v-0-15a-sod/dp/2677464?st=1n4148" H 5650 4600 50  0001 C CNN "URL"
 	1    5650 4600
 	0    1    1    0   
 $EndComp
@@ -69,7 +72,11 @@ P 6350 4650
 F 0 "U1" H 6350 5117 50  0000 C CNN
 F 1 "6N138" H 6350 5026 50  0000 C CNN
 F 2 "6N138SMT_R:SOP254P1030X460-8N" H 6640 4350 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/HCPL2731-D.pdf" H 6640 4350 50  0001 C CNN
+F 3 "http://isocom.com/wp-content/uploads/2017/08/dc93135.pdf" H 6640 4350 50  0001 C CNN
+F 4 "Optocoupler for MIDI circuit" H 6350 4650 50  0001 C CNN "Description"
+F 5 "Isocom" H 6350 4650 50  0001 C CNN "Manufacturer_Name"
+F 6 " 6N138SMT/R " H 6350 4650 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.no/product-detail/no/isocom-components-2004-ltd/6N138SMT-R/6N138SMCT-ND/5037087" H 6350 4650 50  0001 C CNN "URL"
 	1    6350 4650
 	1    0    0    -1  
 $EndComp
@@ -141,7 +148,10 @@ P 4400 4000
 F 0 "J2" H 4400 3633 50  0000 C CNN
 F 1 "DIN-5_180degree" H 4400 3724 50  0000 C CNN
 F 2 "671-0501:671-0501" H 4400 4000 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 4400 4000 50  0001 C CNN
+F 3 "https://www.dem-uk.com/deltron-components/Data/Product_Downloads/deltron-671-0401-4-way-din-socket-data.pdf" H 4400 4000 50  0001 C CNN
+F 4 "Deltron Components" H 4400 4000 50  0001 C CNN "Manufacturer_Name"
+F 5 "671-0501" H 4400 4000 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/deltron-components/671-0501/din-audio-video-conn-jack-5pos/dp/2989966?st=din" H 4400 4000 50  0001 C CNN "URL"
 	1    4400 4000
 	-1   0    0    1   
 $EndComp

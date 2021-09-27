@@ -303,6 +303,7 @@ F 0 "J9" V 2162 844 50  0000 L CNN
 F 1 "Breakout I2S" V 2253 844 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2100 700 50  0001 C CNN
 F 3 "~" H 2100 700 50  0001 C CNN
+F 4 "Same as FPGA_GPIO (Cut to length)" H 2100 700 50  0001 C CNN "Comment"
 	1    2100 700 
 	0    1    1    0   
 $EndComp
@@ -400,6 +401,7 @@ F 8 "595-PCM1741E" H 5050 2400 50  0001 L CNN "Mouser Part Number"
 F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/PCM1741E?qs=wgAEGBTxy7nKC%252BqE%2FGOzOw%3D%3D" H 5050 2300 50  0001 L CNN "Mouser Price/Stock"
 F 10 "PCM1741E" H 5050 2200 50  0001 L CNN "Arrow Part Number"
 F 11 "https://www.arrow.com/en/products/pcm1741e/texas-instruments" H 5050 2100 50  0001 L CNN "Arrow Price/Stock"
+F 12 "https://www.digikey.no/product-detail/no/texas-instruments/PCM1741E/PCM1741E-ND/380269" H 3700 2900 50  0001 C CNN "URL"
 	1    3700 2900
 	1    0    0    -1  
 $EndComp
@@ -414,7 +416,11 @@ P 6950 5800
 F 0 "U5" H 6950 5433 50  0000 C CNN
 F 1 "Opamp_Dual_Generic" H 6950 5524 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 6950 5800 50  0001 C CNN
-F 3 "~" H 6950 5800 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/vkzouxzikr/sbos103.pdf?t.download=true&u=5oefqw" H 6950 5800 50  0001 C CNN
+F 4 "OPAMP for low pass filter after DAC" H 6950 5800 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 6950 5800 50  0001 C CNN "Manufacturer_Name"
+F 6 " OPA2353UA " H 6950 5800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.no/product-detail/en/texas-instruments/OPA2353UA/OPA2353UA-ND/275849" H 6950 5800 50  0001 C CNN "URL"
 	2    6950 5800
 	1    0    0    1   
 $EndComp
@@ -425,7 +431,11 @@ P 5750 6900
 F 0 "U5" H 5708 6946 50  0000 L CNN
 F 1 "Opamp_Dual_Generic" H 5708 6855 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 5750 6900 50  0001 C CNN
-F 3 "~" H 5750 6900 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/vkzouxzikr/sbos103.pdf?t.download=true&u=5oefqw" H 5750 6900 50  0001 C CNN
+F 4 "OPAMP for low pass filter after DAC" H 5750 6900 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 5750 6900 50  0001 C CNN "Manufacturer_Name"
+F 6 " OPA2353UA " H 5750 6900 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.no/product-detail/en/texas-instruments/OPA2353UA/OPA2353UA-ND/275849" H 5750 6900 50  0001 C CNN "URL"
 	3    5750 6900
 	1    0    0    -1  
 $EndComp
@@ -540,7 +550,11 @@ P 6950 4800
 F 0 "U5" H 6950 4433 50  0000 C CNN
 F 1 "Opamp_Dual_Generic" H 6950 4524 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm" H 6950 4800 50  0001 C CNN
-F 3 "~" H 6950 4800 50  0001 C CNN
+F 3 "https://rocelec.widen.net/view/pdf/vkzouxzikr/sbos103.pdf?t.download=true&u=5oefqw" H 6950 4800 50  0001 C CNN
+F 4 "OPAMP for low pass filter after DAC" H 6950 4800 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 6950 4800 50  0001 C CNN "Manufacturer_Name"
+F 6 " OPA2353UA " H 6950 4800 50  0001 C CNN "Manufacturer_Part_Number"
+F 7 "https://www.digikey.no/product-detail/en/texas-instruments/OPA2353UA/OPA2353UA-ND/275849" H 6950 4800 50  0001 C CNN "URL"
 	1    6950 4800
 	1    0    0    1   
 $EndComp

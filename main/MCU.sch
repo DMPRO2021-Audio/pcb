@@ -144,7 +144,10 @@ P 4650 2550
 F 0 "U4" H 5650 2937 60  0000 C CNN
 F 1 "EFM32GG12B810F1024GQ64" H 5650 2831 60  0000 C CNN
 F 2 "EFM32GG12B810F1024Q64:EFM32GG12B810F1024GQ64" H 5650 2790 60  0001 C CNN
-F 3 "" H 4650 2550 60  0000 C CNN
+F 3 "https://www.farnell.com/datasheets/2719978.pdf" H 4650 2550 60  0000 C CNN
+F 4 "Silicon Labs" H 4650 2550 50  0001 C CNN "Manufacturer_Name"
+F 5 "EFM32GG12B810F1024GQ64-A" H 4650 2550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/silicon-labs/efm32gg12b810f1024gq64-a/mcu-32bit-72mhz-qfp-64/dp/2950057" H 4650 2550 50  0001 C CNN "URL"
 	1    4650 2550
 	1    0    0    -1  
 $EndComp
@@ -645,9 +648,12 @@ L Device:LED D6
 U 1 1 6189B0E4
 P 1350 3450
 F 0 "D6" H 1200 3500 50  0000 C CNN
-F 1 "Status LED 3" H 1350 3300 50  0000 C CNN
+F 1 "Status LED" H 1350 3300 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 3450 50  0001 C CNN
-F 3 "~" H 1350 3450 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/1911350.pdf" H 1350 3450 50  0001 C CNN
+F 4 "Wurth Electronic" H 1350 3450 50  0001 C CNN "Manufacturer_Name"
+F 5 "150080RS75000" H 1350 3450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/wurth-elektronik/150080rs75000/led-0805-red-150mcd-625nm/dp/2322077?st=0805%20led" H 1350 3450 50  0001 C CNN "URL"
 	1    1350 3450
 	1    0    0    -1  
 $EndComp
@@ -682,9 +688,12 @@ L Device:LED D5
 U 1 1 618B492D
 P 1350 3150
 F 0 "D5" H 1200 3200 50  0000 C CNN
-F 1 "Status LED 2" H 1350 3000 50  0000 C CNN
+F 1 "Status LED" H 1350 3000 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 3150 50  0001 C CNN
-F 3 "~" H 1350 3150 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/1911350.pdf" H 1350 3150 50  0001 C CNN
+F 4 "Wurth Electronic" H 1350 3150 50  0001 C CNN "Manufacturer_Name"
+F 5 "150080RS75000" H 1350 3150 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/wurth-elektronik/150080rs75000/led-0805-red-150mcd-625nm/dp/2322077?st=0805%20led" H 1350 3150 50  0001 C CNN "URL"
 	1    1350 3150
 	1    0    0    -1  
 $EndComp
@@ -708,9 +717,12 @@ L Device:LED D4
 U 1 1 618BB150
 P 1350 2850
 F 0 "D4" H 1200 2900 50  0000 C CNN
-F 1 "Status LED 1" H 1350 2700 50  0000 C CNN
+F 1 "Status LED" H 1350 2700 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 2850 50  0001 C CNN
-F 3 "~" H 1350 2850 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/1911350.pdf" H 1350 2850 50  0001 C CNN
+F 4 "Wurth Electronic" H 1350 2850 50  0001 C CNN "Manufacturer_Name"
+F 5 "150080RS75000" H 1350 2850 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/wurth-elektronik/150080rs75000/led-0805-red-150mcd-625nm/dp/2322077?st=0805%20led" H 1350 2850 50  0001 C CNN "URL"
 	1    1350 2850
 	1    0    0    -1  
 $EndComp
@@ -734,9 +746,12 @@ L Device:LED D3
 U 1 1 618C9146
 P 1350 2550
 F 0 "D3" H 1200 2600 50  0000 C CNN
-F 1 "Status LED 0" H 1350 2400 50  0000 C CNN
+F 1 "Status LED" H 1350 2400 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1350 2550 50  0001 C CNN
-F 3 "~" H 1350 2550 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/1911350.pdf" H 1350 2550 50  0001 C CNN
+F 4 "Wurth Electronic" H 1350 2550 50  0001 C CNN "Manufacturer_Name"
+F 5 "150080RS75000" H 1350 2550 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://no.farnell.com/wurth-elektronik/150080rs75000/led-0805-red-150mcd-625nm/dp/2322077?st=0805%20led" H 1350 2550 50  0001 C CNN "URL"
 	1    1350 2550
 	1    0    0    -1  
 $EndComp
@@ -1011,6 +1026,7 @@ F 0 "J8" H 1150 6075 50  0000 C CNN
 F 1 "BACKUP_SPI" H 1150 6166 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 1100 6500 50  0001 C CNN
 F 3 "~" H 1100 6500 50  0001 C CNN
+F 4 "Same as FPGA_GPIO (Cut to length)" H 1100 6500 50  0001 C CNN "Comment"
 	1    1100 6500
 	-1   0    0    1   
 $EndComp
@@ -1135,6 +1151,7 @@ F 0 "J7" H 1550 5217 50  0000 C CNN
 F 1 "MCU_GPIO" H 1550 5126 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 1500 4800 50  0001 C CNN
 F 3 "~" H 1500 4800 50  0001 C CNN
+F 4 "Same as FPGA_GPIO (Cut to length)" H 1500 4800 50  0001 C CNN "Comment"
 	1    1500 4800
 	1    0    0    -1  
 $EndComp
@@ -1182,7 +1199,7 @@ U 1 1 625985B5
 P 1700 1500
 F 0 "X2" H 2044 1546 50  0000 L CNN
 F 1 "MCU_Oscillator" H 2044 1455 50  0000 L CNN
-F 2 "" H 2400 1150 50  0001 C CNN
+F 2 "Oscillator:Oscillator_SMD_SeikoEpson_SG210-4Pin_2.5x2.0mm_HandSoldering" H 2400 1150 50  0001 C CNN
 F 3 "http://www.txccorp.com/download/products/osc/7C_o.pdf" H 1600 1500 50  0001 C CNN
 	1    1700 1500
 	1    0    0    -1  

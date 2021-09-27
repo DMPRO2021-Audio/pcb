@@ -27,9 +27,12 @@ L Switch:SW_Push SW1
 U 1 1 6145369A
 P 850 6450
 F 0 "SW1" V 700 6500 50  0000 L CNN
-F 1 "FBKey0" V 1000 6500 50  0000 L CNN
+F 1 "FBKey" V 1000 6500 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 850 6650 50  0001 C CNN
-F 3 "~" H 850 6650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 850 6650 50  0001 C CNN
+F 4 "C&K" H 850 6450 50  0001 C CNN "Manufacturer_Name"
+F 5 " PTS645SM43SMTR92 LFS " H 850 6450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112DKR-ND/1870061" H 850 6450 50  0001 C CNN "URL"
 	1    850  6450
 	0    1    1    0   
 $EndComp
@@ -49,9 +52,12 @@ L Switch:SW_Push SW2
 U 1 1 6145516D
 P 1300 6450
 F 0 "SW2" V 1150 6500 50  0000 L CNN
-F 1 "FBKey1" V 1450 6500 50  0000 L CNN
+F 1 "FBKey" V 1450 6500 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 1300 6650 50  0001 C CNN
-F 3 "~" H 1300 6650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 1300 6650 50  0001 C CNN
+F 4 "C&K" H 1300 6450 50  0001 C CNN "Manufacturer_Name"
+F 5 " PTS645SM43SMTR92 LFS " H 1300 6450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112DKR-ND/1870061" H 1300 6450 50  0001 C CNN "URL"
 	1    1300 6450
 	0    1    1    0   
 $EndComp
@@ -71,9 +77,12 @@ L Switch:SW_Push SW3
 U 1 1 61455E9E
 P 1750 6450
 F 0 "SW3" V 1600 6500 50  0000 L CNN
-F 1 "FBKey2" V 1900 6500 50  0000 L CNN
+F 1 "FBKey" V 1900 6500 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 1750 6650 50  0001 C CNN
-F 3 "~" H 1750 6650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 1750 6650 50  0001 C CNN
+F 4 "C&K" H 1750 6450 50  0001 C CNN "Manufacturer_Name"
+F 5 " PTS645SM43SMTR92 LFS " H 1750 6450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112DKR-ND/1870061" H 1750 6450 50  0001 C CNN "URL"
 	1    1750 6450
 	0    1    1    0   
 $EndComp
@@ -192,31 +201,16 @@ Wire Wire Line
 Wire Wire Line
 	1650 6000 1300 6000
 $Comp
-L Connector:AudioJack3 J1
-U 1 1 614686B4
-P 8800 3550
-F 0 "J1" H 8520 3575 50  0000 R CNN
-F 1 "AudioJack3" H 8520 3484 50  0000 R CNN
-F 2 "STX-3000:STX3000" H 8800 3550 50  0001 C CNN
-F 3 "~" H 8800 3550 50  0001 C CNN
-	1    8800 3550
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 614690FB
-P 8550 3250
-F 0 "#PWR01" H 8550 3000 50  0001 C CNN
-F 1 "GND" H 8555 3077 50  0000 C CNN
-F 2 "" H 8550 3250 50  0001 C CNN
-F 3 "" H 8550 3250 50  0001 C CNN
-	1    8550 3250
-	-1   0    0    1   
+P 9550 3750
+F 0 "#PWR01" H 9550 3500 50  0001 C CNN
+F 1 "GND" H 9555 3577 50  0000 C CNN
+F 2 "" H 9550 3750 50  0001 C CNN
+F 3 "" H 9550 3750 50  0001 C CNN
+	1    9550 3750
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8550 3450 8600 3450
-Wire Wire Line
-	8550 3250 8550 3450
 $Sheet
 S 1050 800  1400 1200
 U 61483B8A
@@ -267,9 +261,12 @@ L Switch:SW_Push SW4
 U 1 1 6171C195
 P 2200 6450
 F 0 "SW4" V 2050 6500 50  0000 L CNN
-F 1 "FBKey3" V 2350 6500 50  0000 L CNN
+F 1 "FBKey" V 2350 6500 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 2200 6650 50  0001 C CNN
-F 3 "~" H 2200 6650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 2200 6650 50  0001 C CNN
+F 4 "C&K" H 2200 6450 50  0001 C CNN "Manufacturer_Name"
+F 5 " PTS645SM43SMTR92 LFS " H 2200 6450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112DKR-ND/1870061" H 2200 6450 50  0001 C CNN "URL"
 	1    2200 6450
 	0    1    1    0   
 $EndComp
@@ -300,9 +297,12 @@ L Switch:SW_Push SW5
 U 1 1 6171D74D
 P 2650 6450
 F 0 "SW5" V 2500 6500 50  0000 L CNN
-F 1 "FBKey4" V 2800 6500 50  0000 L CNN
+F 1 "FBKey" V 2800 6500 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_6x6mm_H9.5mm" H 2650 6650 50  0001 C CNN
-F 3 "~" H 2650 6650 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1471/pts645.pdf" H 2650 6650 50  0001 C CNN
+F 4 "C&K" H 2650 6450 50  0001 C CNN "Manufacturer_Name"
+F 5 " PTS645SM43SMTR92 LFS " H 2650 6450 50  0001 C CNN "Manufacturer_Part_Number"
+F 6 "https://www.digikey.no/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112DKR-ND/1870061" H 2650 6450 50  0001 C CNN "URL"
 	1    2650 6450
 	0    1    1    0   
 $EndComp
@@ -389,4 +389,28 @@ Wire Wire Line
 	8600 3550 7950 3550
 Wire Wire Line
 	7950 3650 8600 3650
+$Comp
+L STX-3000:STX-3000 J1
+U 1 1 6264F3F4
+P 9400 3550
+F 0 "J1" H 9800 3815 50  0000 C CNN
+F 1 "STX-3000" H 9800 3724 50  0000 C CNN
+F 2 "STX-3000:STX3000" H 10050 3650 50  0001 L CNN
+F 3 "http://www.kycon.com/Pub_Eng_Draw/STX-3000.pdf" H 10050 3550 50  0001 L CNN
+F 4 "Phone Connectors 3.5mm PCB STEREO BLK PLASTIC NON THREADED" H 10050 3450 50  0001 L CNN "Description"
+F 5 "5.4" H 10050 3350 50  0001 L CNN "Height"
+F 6 "Kycon, Inc." H 10050 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "STX-3000" H 10050 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 10050 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 10050 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 10050 2850 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 10050 2750 50  0001 L CNN "Arrow Price/Stock"
+F 12 "https://no.farnell.com/kycon/stx-3000/stereo-jack-3-5mm-3pos-pbt-pcb/dp/2839860" H 9400 3550 50  0001 C CNN "URL"
+	1    9400 3550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3750 9550 3550
+Wire Wire Line
+	9550 3550 9400 3550
 $EndSCHEMATC

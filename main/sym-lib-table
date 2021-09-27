@@ -5,4 +5,5 @@
   (lib (name TPA6110A2DGN)(type Legacy)(uri ${KIPRJMOD}/TPA6110A2DGN.lib)(options "")(descr ""))
   (lib (name TPS54294PWP)(type Legacy)(uri ${KIPRJMOD}/TPS54294PWP.lib)(options "")(descr ""))
   (lib (name ESP-PSRAM64H)(type Legacy)(uri ${KIPRJMOD}/ESP-PSRAM64H.lib)(options "")(descr ""))
+  (lib (name STX-3000)(type Legacy)(uri ${KIPRJMOD}/STX-3000.lib)(options "")(descr ""))
 )
