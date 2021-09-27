@@ -1185,14 +1185,6 @@ Wire Wire Line
 	1950 5300 1950 5100
 Wire Wire Line
 	1950 5100 1800 5100
-Wire Bus Line
-	5250 950  5250 1650
-Wire Bus Line
-	2200 4450 2200 5700
-Wire Bus Line
-	900  4700 900  5700
-Wire Bus Line
-	4150 3450 4150 4450
 $Comp
 L Oscillator:TXC-7C X2
 U 1 1 625985B5
@@ -1204,4 +1196,12 @@ F 3 "http://www.txccorp.com/download/products/osc/7C_o.pdf" H 1600 1500 50  0001
 	1    1700 1500
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5250 950  5250 1650
+Wire Bus Line
+	2200 4450 2200 5700
+Wire Bus Line
+	900  4700 900  5700
+Wire Bus Line
+	4150 3450 4150 4450
 $EndSCHEMATC

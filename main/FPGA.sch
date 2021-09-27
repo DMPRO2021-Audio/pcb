@@ -233,7 +233,7 @@ P 1950 9500
 F 0 "U3" H 1950 11067 50  0000 C CNN
 F 1 "XC7A100T-FTG256" H 1950 10976 50  0000 C CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 1950 9500 50  0001 C CNN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 1950 9500 50  0000 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 1950 9500 50  0001 C CNN
 F 4 "Xilinx" H 1950 9500 50  0001 C CNN "Manufacturer_Name"
 F 5 "XC7A100T-FTG256" H 1950 9500 50  0001 C CNN "Manufacturer_Part_Number"
 	4    1950 9500

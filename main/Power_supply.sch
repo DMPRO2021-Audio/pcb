@@ -909,12 +909,12 @@ $Comp
 L Device:Jumper JP2
 U 1 1 6165E780
 P 1950 5200
-F 0 "JP2" H 1950 5464 50  0000 C CNN
-F 1 "Jumper" H 1950 5373 50  0000 C CNN
+F 0 "JP2" H 1950 5100 50  0000 C CNN
+F 1 "Jumper" H 1950 5000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Vertical" H 1950 5200 50  0001 C CNN
 F 3 "~" H 1950 5200 50  0001 C CNN
 	1    1950 5200
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Connection ~ 1650 5200
 Connection ~ 2250 5200
