@@ -1320,7 +1320,6 @@ NoConn ~ 11900 2650
 NoConn ~ 11900 6650
 NoConn ~ 11900 5550
 NoConn ~ 11900 4850
-NoConn ~ 11900 4750
 NoConn ~ 11900 4650
 NoConn ~ 11900 4550
 NoConn ~ 11900 4450
@@ -1377,14 +1376,6 @@ NoConn ~ 15900 1850
 NoConn ~ 15900 1750
 NoConn ~ 15900 2050
 Wire Wire Line
-	13100 7500 12800 7500
-Entry Wire Line
-	12700 7600 12800 7500
-Wire Wire Line
-	13100 7600 12800 7600
-Entry Wire Line
-	12700 7700 12800 7600
-Wire Wire Line
 	13100 7700 12800 7700
 Entry Wire Line
 	12700 7800 12800 7700
@@ -1412,30 +1403,22 @@ Wire Wire Line
 	13600 7600 13900 7600
 Entry Wire Line
 	13900 7600 14000 7700
-Entry Wire Line
-	13900 7500 14000 7600
-Text Label 13050 7800 2    50   ~ 0
-GPIO6
-Text Label 13050 7900 2    50   ~ 0
-GPIO5
-Text Label 13650 7900 0    50   ~ 0
-GPIO4
-Text Label 13650 7800 0    50   ~ 0
-GPIO3
-Text Label 13650 7700 0    50   ~ 0
-GPIO2
-Text Label 13650 7600 0    50   ~ 0
-GPIO1
-Text Label 13650 7500 0    50   ~ 0
-GPIO0
-Wire Wire Line
-	13600 7500 13900 7500
 Text Label 13050 7700 2    50   ~ 0
-GPIO7
+GPIO6
+Text Label 13050 7800 2    50   ~ 0
+GPIO5
+Text Label 13050 7900 2    50   ~ 0
+GPIO4
+Text Label 13650 7900 0    50   ~ 0
+GPIO3
+Text Label 13650 7800 0    50   ~ 0
+GPIO2
+Text Label 13650 7700 0    50   ~ 0
+GPIO1
+Text Label 13650 7600 0    50   ~ 0
+GPIO0
 Text Label 13050 7600 2    50   ~ 0
-GPIO8
-Text Label 13050 7500 2    50   ~ 0
-GPIO9
+GPIO7
 Text Label 12400 7350 2    50   ~ 0
 GPIO[0..9]
 Wire Bus Line
@@ -1476,8 +1459,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 5500 10900 5500
 Entry Wire Line
-	11450 5850 11550 5750
-Entry Wire Line
 	11450 5950 11550 5850
 Entry Wire Line
 	11450 6050 11550 5950
@@ -1492,31 +1473,25 @@ Entry Wire Line
 Entry Wire Line
 	11450 6550 11550 6450
 Entry Wire Line
-	11450 6650 11550 6550
-Entry Wire Line
-	11450 5750 11550 5650
+	11450 6650 11350 6550
 Wire Bus Line
 	11450 7350 12700 7350
-Text Label 11600 6550 0    50   ~ 0
-GPIO0
-Text Label 11600 6450 0    50   ~ 0
-GPIO1
-Text Label 11600 6350 0    50   ~ 0
-GPIO2
-Text Label 11600 6250 0    50   ~ 0
+Text Label 11150 6550 0    50   ~ 0
 GPIO3
+Text Label 11600 6450 0    50   ~ 0
+GPIO7
+Text Label 11600 6350 0    50   ~ 0
+GPIO6
+Text Label 11600 6250 0    50   ~ 0
+GPIO0
 Text Label 11600 6150 0    50   ~ 0
 GPIO4
 Text Label 11600 6050 0    50   ~ 0
-GPIO5
+GPIO2
 Text Label 11600 5950 0    50   ~ 0
-GPIO6
+GPIO5
 Text Label 11600 5850 0    50   ~ 0
-GPIO7
-Text Label 11600 5750 0    50   ~ 0
-GPIO8
-Text Label 11600 5650 0    50   ~ 0
-GPIO9
+GPIO1
 Wire Wire Line
 	7700 9850 9700 9850
 Wire Wire Line
@@ -1568,8 +1543,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 3450 9800 3450
 Wire Wire Line
-	11550 6550 11900 6550
-Wire Wire Line
 	11550 6450 11900 6450
 Wire Wire Line
 	11900 6350 11550 6350
@@ -1583,10 +1556,6 @@ Wire Wire Line
 	11900 5950 11550 5950
 Wire Wire Line
 	11550 5850 11900 5850
-Wire Wire Line
-	11900 5750 11550 5750
-Wire Wire Line
-	11550 5650 11900 5650
 Wire Wire Line
 	9550 10700 9650 10700
 Wire Wire Line
@@ -1733,19 +1702,6 @@ Wire Wire Line
 	10800 5400 10800 4950
 Wire Wire Line
 	10800 4950 11900 4950
-$Comp
-L FPGA_Xilinx_Artix7:XC7A100T-FTG256 U3
-U 1 1 61604A2B
-P 13900 3850
-F 0 "U3" H 13900 6550 50  0000 C CNN
-F 1 "XC7A100T-FTG256" H 13900 900 50  0000 C CNN
-F 2 "Package_BGA:Xilinx_FTG256" H 13900 3850 50  0001 C CNN
-F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 13900 3850 50  0000 C CNN
-F 4 "Xilinx" H 13900 3850 50  0001 C CNN "Manufacturer_Name"
-F 5 "XC7A100T-FTG256" H 13900 3850 50  0001 C CNN "Manufacturer_Part_Number"
-	1    13900 3850
-	1    0    0    -1  
-$EndComp
 NoConn ~ 11900 4350
 Wire Wire Line
 	10450 4850 11650 4850
@@ -2254,6 +2210,66 @@ F 4 "" H 8500 7950 50  0001 C CNN "URL"
 	1    8500 7950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	11900 4750 11700 4750
+Wire Wire Line
+	11700 4750 11700 5300
+Wire Wire Line
+	11700 5300 11100 5300
+Wire Wire Line
+	11100 5300 11100 6550
+Wire Wire Line
+	11100 6550 11350 6550
+$Comp
+L FPGA_Xilinx_Artix7:XC7A100T-FTG256 U3
+U 1 1 61604A2B
+P 13900 3850
+F 0 "U3" H 13900 6550 50  0000 C CNN
+F 1 "XC7A100T-FTG256" H 13900 900 50  0000 C CNN
+F 2 "Package_BGA:Xilinx_FTG256" H 13900 3850 50  0001 C CNN
+F 3 "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiH1rrnlZ_zAhUrtYsKHcsIDFQQFnoECAUQAQ&url=https%3A%2F%2Fwww.xilinx.com%2Fsupport%2Fdocumentation%2Fuser_guides%2Fug475_7Series_Pkg_Pinout.pdf&usg=AOvVaw3NyLHDtSbZv1hXp1wxMn0l" H 13900 3850 50  0000 C CNN
+F 4 "Xilinx" H 13900 3850 50  0001 C CNN "Manufacturer_Name"
+F 5 "XC7A100T-FTG256" H 13900 3850 50  0001 C CNN "Manufacturer_Part_Number"
+	1    13900 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11900 6550
+NoConn ~ 11900 5650
+NoConn ~ 11900 5750
+Entry Wire Line
+	12800 7600 12700 7700
+Wire Wire Line
+	12800 7600 13100 7600
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 617E6C6F
+P 13700 7350
+F 0 "#PWR0101" H 13700 7200 50  0001 C CNN
+F 1 "+3.3V" H 13715 7523 50  0000 C CNN
+F 2 "" H 13700 7350 50  0001 C CNN
+F 3 "" H 13700 7350 50  0001 C CNN
+	1    13700 7350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 7350 13700 7500
+Wire Wire Line
+	13700 7500 13600 7500
+$Comp
+L power:GND #PWR0102
+U 1 1 61811D03
+P 13000 7350
+F 0 "#PWR0102" H 13000 7100 50  0001 C CNN
+F 1 "GND" H 13005 7177 50  0000 C CNN
+F 2 "" H 13000 7350 50  0001 C CNN
+F 3 "" H 13000 7350 50  0001 C CNN
+	1    13000 7350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	13000 7350 13000 7500
+Wire Wire Line
+	13000 7500 13100 7500
 Wire Bus Line
 	10250 3150 10250 3350
 Wire Bus Line
@@ -2261,7 +2277,7 @@ Wire Bus Line
 Wire Bus Line
 	12700 7350 12700 8400
 Wire Bus Line
-	14000 7600 14000 8400
+	14000 7700 14000 8400
 Wire Bus Line
-	11450 5750 11450 7350
+	11450 5950 11450 7350
 $EndSCHEMATC
