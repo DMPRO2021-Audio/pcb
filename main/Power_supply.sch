@@ -255,7 +255,7 @@ F 4 "muRata" H 3300 5200 50  0001 C CNN "Manufacturer_Name"
 F 5 "1286AS-H-2R2M=P2" H 3300 5200 50  0001 C CNN "Manufacturer_Part_Number"
 F 6 "https://no.farnell.com/murata/1286as-h-2r2m-p2/inductor-2-2uh-20-1-5a-shld-0806/dp/2530046?st=inductor%20smd%200806" H 3300 5200 50  0001 C CNN "URL"
 	1    3300 5200
-	0    -1   -1   0   
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:C C15
