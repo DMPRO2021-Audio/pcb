@@ -6,4 +6,5 @@
   (lib (name 671-0501)(type KiCad)(uri ${KIPRJMOD}/671-0501.pretty)(options "")(descr ""))
   (lib (name STX-3000)(type KiCad)(uri ${KIPRJMOD}/STX-3000.pretty)(options "")(descr ""))
   (lib (name 6N138SMT_R)(type KiCad)(uri ${KIPRJMOD}/6N138SMT_R.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri ${KIPRJMOD}/logo.pretty)(options "")(descr ""))
 )

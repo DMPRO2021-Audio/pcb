@@ -1075,4 +1075,6 @@ Wire Wire Line
 Wire Wire Line
 	1400 1400 1400 1500
 Connection ~ 1400 1500
+Text Label 2350 1300 0    50   ~ 0
+POWER_IN
 $EndSCHEMATC
