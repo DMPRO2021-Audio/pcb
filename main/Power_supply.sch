@@ -581,8 +581,6 @@ Wire Wire Line
 Wire Wire Line
 	6500 2450 6500 2300
 Wire Wire Line
-	6800 2450 6800 2300
-Wire Wire Line
 	4600 2900 6300 2900
 Wire Wire Line
 	6800 2900 6800 2750
@@ -740,7 +738,7 @@ Wire Wire Line
 	8250 1900 8550 1900
 Connection ~ 8250 1900
 Wire Wire Line
-	8550 2250 6600 2250
+	8550 2250 6800 2250
 Wire Wire Line
 	6600 2250 6600 2200
 Wire Wire Line
@@ -1077,4 +1075,37 @@ Wire Wire Line
 Connection ~ 1400 1500
 Text Label 2350 1300 0    50   ~ 0
 POWER_IN
+$Comp
+L Device:R R46
+U 1 1 61A799C5
+P 6550 2100
+F 0 "R46" V 6450 2200 50  0000 L CNN
+F 1 "100k" V 6450 1950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6480 2100 50  0001 C CNN
+F 3 "~" H 6550 2100 50  0001 C CNN
+	1    6550 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 2250 6800 2450
+Wire Wire Line
+	6800 2250 6800 2100
+Wire Wire Line
+	6700 2100 6800 2100
+Connection ~ 6800 2250
+Wire Wire Line
+	6800 2250 6600 2250
+Wire Wire Line
+	6400 2100 6100 2100
+Connection ~ 6100 2100
+Text Notes 6700 2150 0    50   ~ 0
+Missing from v1.0.0\n
+Wire Notes Line
+	6400 1950 6400 2150
+Wire Notes Line
+	6400 2150 7450 2150
+Wire Notes Line
+	7450 2150 7450 1950
+Wire Notes Line
+	7450 1950 6400 1950
 $EndSCHEMATC
