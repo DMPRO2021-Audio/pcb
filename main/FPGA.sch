@@ -1042,7 +1042,7 @@ $EndComp
 Wire Wire Line
 	5350 2950 5450 2950
 Wire Wire Line
-	5450 2950 5450 1600
+	5450 2950 5450 1700
 $Comp
 L power:+3.3V #PWR020
 U 1 1 6178BEFA
@@ -1069,7 +1069,7 @@ Wire Wire Line
 	4700 1800 4700 1700
 Connection ~ 4700 1700
 Wire Wire Line
-	4700 1700 5650 1700
+	4700 1700 5450 1700
 Wire Wire Line
 	8250 3100 8250 2150
 Wire Wire Line
@@ -2270,6 +2270,19 @@ Wire Wire Line
 	13000 7350 13000 7500
 Wire Wire Line
 	13000 7500 13100 7500
+Connection ~ 5450 1700
+Wire Wire Line
+	5450 1700 5450 1600
+Wire Wire Line
+	5450 1700 5650 1700
+Wire Notes Line
+	5350 1600 5550 1600
+Wire Notes Line
+	5550 1600 5550 1800
+Wire Notes Line
+	5550 1800 5350 1800
+Wire Notes Line
+	5350 1800 5350 1600
 Wire Bus Line
 	10250 3150 10250 3350
 Wire Bus Line
@@ -2280,4 +2293,6 @@ Wire Bus Line
 	14000 7700 14000 8400
 Wire Bus Line
 	11450 5950 11450 7350
+Text Notes 5600 1650 0    50   ~ 0
+Junction missing in v1.0.0. \nFixed on board by soldering wire between U2 pin 8 and 3v3 pad on R19
 $EndSCHEMATC
